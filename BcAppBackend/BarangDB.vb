@@ -29,4 +29,21 @@ Public Class BarangDB
         Return Status.Success
     End Function
 
+    Public Function get_buy_price(code As String)
+        conn.Open()
+        cmd = New SqlCommand("SELECT harga_beli FROM barang WHERE kode_barang = @code", conn)
+        cmd.Parameters.Add("@user_id", SqlDbType.VarChar).Value = code.ToLower()
+        Dim str = ""
+        Dim reader = cmd.ExecuteReader()
+        While reader.Read
+            str = reader.GetInt32(0).ToString()
+        End While
+        conn.Close()
+        Return str
+    End Function
+
+    Public Function price_difference()
+
+    End Function
+
 End Class

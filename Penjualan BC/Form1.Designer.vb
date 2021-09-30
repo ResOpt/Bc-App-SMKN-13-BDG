@@ -28,6 +28,7 @@ Partial Class Form1
         Me.LblUsername = New System.Windows.Forms.Label()
         Me.LblStatus = New System.Windows.Forms.Label()
         Me.PnlMenu = New System.Windows.Forms.Panel()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -74,7 +75,6 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Dashboard = New System.Windows.Forms.Panel()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel6.SuspendLayout()
         Me.PnlMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class Form1
         Me.Panel6.Controls.Add(Me.LblStatus)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(127, 32)
         Me.Panel6.TabIndex = 5
@@ -134,11 +134,20 @@ Partial Class Form1
         Me.PnlMenu.Controls.Add(Me.GroupBox2)
         Me.PnlMenu.Dock = System.Windows.Forms.DockStyle.Top
         Me.PnlMenu.Location = New System.Drawing.Point(0, 61)
-        Me.PnlMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PnlMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.PnlMenu.Name = "PnlMenu"
         Me.PnlMenu.Size = New System.Drawing.Size(718, 90)
         Me.PnlMenu.TabIndex = 7
         Me.PnlMenu.Visible = False
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(563, 13)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(56, 48)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "Login"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -147,9 +156,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Barang)
         Me.GroupBox1.Controls.Add(Me.Admin)
         Me.GroupBox1.Location = New System.Drawing.Point(6, 2)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(102, 86)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
@@ -181,7 +190,7 @@ Partial Class Form1
         Me.Barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Barang.Image = CType(resources.GetObject("Barang.Image"), System.Drawing.Image)
         Me.Barang.Location = New System.Drawing.Point(51, 16)
-        Me.Barang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Barang.Margin = New System.Windows.Forms.Padding(2)
         Me.Barang.Name = "Barang"
         Me.Barang.Size = New System.Drawing.Size(45, 38)
         Me.Barang.TabIndex = 2
@@ -193,7 +202,7 @@ Partial Class Form1
         Me.Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Admin.Image = CType(resources.GetObject("Admin.Image"), System.Drawing.Image)
         Me.Admin.Location = New System.Drawing.Point(2, 16)
-        Me.Admin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Admin.Margin = New System.Windows.Forms.Padding(2)
         Me.Admin.Name = "Admin"
         Me.Admin.Size = New System.Drawing.Size(45, 38)
         Me.Admin.TabIndex = 0
@@ -204,9 +213,9 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.Button1)
         Me.GroupBox4.Location = New System.Drawing.Point(489, 2)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox4.Size = New System.Drawing.Size(69, 86)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
@@ -228,7 +237,7 @@ Partial Class Form1
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.Location = New System.Drawing.Point(8, 13)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(45, 38)
         Me.Button1.TabIndex = 6
@@ -243,9 +252,9 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.LapPenjualan)
         Me.GroupBox3.Controls.Add(Me.LapData)
         Me.GroupBox3.Location = New System.Drawing.Point(249, 2)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox3.Size = New System.Drawing.Size(235, 86)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
@@ -267,7 +276,7 @@ Partial Class Form1
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.Location = New System.Drawing.Point(177, 14)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(45, 38)
         Me.Button3.TabIndex = 10
@@ -299,7 +308,7 @@ Partial Class Form1
         Me.LapPenjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LapPenjualan.Image = CType(resources.GetObject("LapPenjualan.Image"), System.Drawing.Image)
         Me.LapPenjualan.Location = New System.Drawing.Point(109, 14)
-        Me.LapPenjualan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LapPenjualan.Margin = New System.Windows.Forms.Padding(2)
         Me.LapPenjualan.Name = "LapPenjualan"
         Me.LapPenjualan.Size = New System.Drawing.Size(45, 38)
         Me.LapPenjualan.TabIndex = 8
@@ -311,7 +320,7 @@ Partial Class Form1
         Me.LapData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LapData.Image = CType(resources.GetObject("LapData.Image"), System.Drawing.Image)
         Me.LapData.Location = New System.Drawing.Point(26, 14)
-        Me.LapData.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LapData.Margin = New System.Windows.Forms.Padding(2)
         Me.LapData.Name = "LapData"
         Me.LapData.Size = New System.Drawing.Size(45, 38)
         Me.LapData.TabIndex = 7
@@ -324,9 +333,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Penjualan)
         Me.GroupBox2.Location = New System.Drawing.Point(113, 2)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox2.Size = New System.Drawing.Size(132, 86)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
@@ -348,7 +357,7 @@ Partial Class Form1
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.Location = New System.Drawing.Point(72, 14)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(45, 38)
         Me.Button2.TabIndex = 7
@@ -370,7 +379,7 @@ Partial Class Form1
         Me.Penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Penjualan.Image = CType(resources.GetObject("Penjualan.Image"), System.Drawing.Image)
         Me.Penjualan.Location = New System.Drawing.Point(12, 14)
-        Me.Penjualan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Penjualan.Margin = New System.Windows.Forms.Padding(2)
         Me.Penjualan.Name = "Penjualan"
         Me.Penjualan.Size = New System.Drawing.Size(45, 38)
         Me.Penjualan.TabIndex = 6
@@ -457,7 +466,7 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.Tgl)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel3.Location = New System.Drawing.Point(605, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(113, 32)
         Me.Panel3.TabIndex = 0
@@ -491,7 +500,7 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 441)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(718, 32)
         Me.Panel1.TabIndex = 6
@@ -501,7 +510,7 @@ Partial Class Form1
         Me.Panel4.Controls.Add(Me.Menu)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(49, 37)
         Me.Panel4.TabIndex = 5
@@ -512,7 +521,7 @@ Partial Class Form1
         Me.Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Menu.Image = Global.Penjualan_BC.My.Resources.Resources.menu
         Me.Menu.Location = New System.Drawing.Point(8, 8)
-        Me.Menu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Menu.Margin = New System.Windows.Forms.Padding(2)
         Me.Menu.Name = "Menu"
         Me.Menu.Size = New System.Drawing.Size(30, 19)
         Me.Menu.TabIndex = 0
@@ -527,7 +536,7 @@ Partial Class Form1
         Me.Min.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Min.Image = CType(resources.GetObject("Min.Image"), System.Drawing.Image)
         Me.Min.Location = New System.Drawing.Point(6, 6)
-        Me.Min.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Min.Margin = New System.Windows.Forms.Padding(2)
         Me.Min.Name = "Min"
         Me.Min.Size = New System.Drawing.Size(29, 27)
         Me.Min.TabIndex = 2
@@ -539,7 +548,7 @@ Partial Class Form1
         Me.Cls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Cls.Image = Global.Penjualan_BC.My.Resources.Resources.close
         Me.Cls.Location = New System.Drawing.Point(72, 5)
-        Me.Cls.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Cls.Margin = New System.Windows.Forms.Padding(2)
         Me.Cls.Name = "Cls"
         Me.Cls.Size = New System.Drawing.Size(27, 28)
         Me.Cls.TabIndex = 0
@@ -551,7 +560,7 @@ Partial Class Form1
         Me.Max.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Max.Image = CType(resources.GetObject("Max.Image"), System.Drawing.Image)
         Me.Max.Location = New System.Drawing.Point(39, 6)
-        Me.Max.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Max.Margin = New System.Windows.Forms.Padding(2)
         Me.Max.Name = "Max"
         Me.Max.Size = New System.Drawing.Size(29, 27)
         Me.Max.TabIndex = 1
@@ -564,7 +573,7 @@ Partial Class Form1
         Me.Panel5.Controls.Add(Me.Max)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel5.Location = New System.Drawing.Point(616, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(102, 37)
         Me.Panel5.TabIndex = 3
@@ -577,7 +586,7 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(718, 37)
         Me.Panel2.TabIndex = 5
@@ -602,19 +611,10 @@ Partial Class Form1
         '
         Me.Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Dashboard.Location = New System.Drawing.Point(0, 37)
-        Me.Dashboard.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Dashboard.Margin = New System.Windows.Forms.Padding(2)
         Me.Dashboard.Name = "Dashboard"
         Me.Dashboard.Size = New System.Drawing.Size(718, 404)
         Me.Dashboard.TabIndex = 8
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(563, 13)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(56, 48)
-        Me.Button4.TabIndex = 8
-        Me.Button4.Text = "Login"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -628,7 +628,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama"

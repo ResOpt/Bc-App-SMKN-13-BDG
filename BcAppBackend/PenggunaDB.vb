@@ -158,7 +158,13 @@ Public Class PenggunaDB
         Dim str = ""
         Dim reader = cmd.ExecuteReader()
         While reader.Read
-            str = reader.GetString(0)
+            If reader.GetInt32(0) = 3 Then
+                str = "Superuser"
+            ElseIf reader.GetInt32(0) = 2 Then
+                str = "Admin"
+            ElseIf reader.GetInt32(0) = 1 Then
+                str = "Pengguna"
+            End If
         End While
         conn.Close()
         Return str

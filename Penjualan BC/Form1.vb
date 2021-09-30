@@ -125,4 +125,12 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Login.ShowDialog()
     End Sub
+
+    Private Sub LblUsername_Click(sender As Object, e As EventArgs) Handles LblUsername.Click
+
+    End Sub
+
+    Private Sub LblStatus_Click(sender As Object, e As EventArgs) Handles LblStatus.Click
+
+    End Sub
 End Class

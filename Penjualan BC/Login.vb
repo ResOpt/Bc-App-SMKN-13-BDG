@@ -36,10 +36,16 @@ Public Class Login
 
     Private Sub ButtonLogin_Click(sender As Object, e As EventArgs) Handles ButtonLogin.Click
         Dim log = connect.login(Username.Text, Password.Text)
-        If log Then
+        If log = Status.Success Then
             MessageBox.Show("Login berhasil! Selamat datang, " & user)
+            Form1.LblUsername.Text = user
+            Debug.WriteLine("USER: " & user)
+            Form1.LblStatus.Text = connect.get_status(user)
+            Debug.WriteLine("USER: " & user)
+            ClearTextBoxes(Me)
         Else
             MessageBox.Show("Login gagal!")
+            ClearTextBoxes(Me)
         End If
     End Sub
 
@@ -48,6 +54,10 @@ Public Class Login
     End Sub
 
     Private Sub Password_TextChanged(sender As Object, e As EventArgs) Handles Password.TextChanged
+
+    End Sub
+
+    Private Sub LogoAkun_Click(sender As Object, e As EventArgs) Handles LogoAkun.Click
 
     End Sub
 End Class
