@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BcAppBackend", "BcAppBackend\BcAppBackend.shproj", "{D9B37107-453B-4A98-A6EF-E7A33A58C5CB}"
+EndProject
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Penjualan BC", "Penjualan BC\Penjualan BC.vbproj", "{185897CC-259E-46BD-9C42-77487937E3FB}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		BcAppBackend\BcAppBackend.projitems*{185897cc-259e-46bd-9c42-77487937e3fb}*SharedItemsImports = 5
+		BcAppBackend\BcAppBackend.projitems*{d9b37107-453b-4a98-a6ef-e7a33a58c5cb}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{185897CC-259E-46BD-9C42-77487937E3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185897CC-259E-46BD-9C42-77487937E3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185897CC-259E-46BD-9C42-77487937E3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185897CC-259E-46BD-9C42-77487937E3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8165DA0B-A415-49D5-BAA5-0ED3214FD833}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\bin\Release\net5.0-windows\publish\Penjualan BC.exe
+C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\bin\Release\net5.0-windows\publish\Penjualan BC.dll
+C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\bin\Release\net5.0-windows\publish\Penjualan BC.deps.json
+C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\bin\Release\net5.0-windows\publish\Penjualan BC.runtimeconfig.json
+C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\bin\Release\net5.0-windows\publish\Penjualan BC.pdb

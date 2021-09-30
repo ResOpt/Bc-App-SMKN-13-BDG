@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d9b37107-453b-4a98-a6ef-e7a33a58c5cb</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BcAppBackend</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PenggunaDB.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)BarangDB.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)DbConnection.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enums.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)PembelianDB.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)PenjualanDB.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)config.conf" />
+    <None Include="$(MSBuildThisFileDirectory)database.sql" />
+  </ItemGroup>
+</Project>

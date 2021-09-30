@@ -1,0 +1,5 @@
+D:\PjBL\App\Proyek\Penjualan BC.exe
+D:\PjBL\App\Proyek\Penjualan BC.dll
+D:\PjBL\App\Proyek\Penjualan BC.deps.json
+D:\PjBL\App\Proyek\Penjualan BC.runtimeconfig.json
+D:\PjBL\App\Proyek\Penjualan BC.pdb
