@@ -123,6 +123,7 @@
             Menu.Enabled = False
             MenuStrip1.Visible = False
             PnlMenu.Visible = False
+            user = vbNullString
             Login.ShowDialog()
         End If
     End Sub
