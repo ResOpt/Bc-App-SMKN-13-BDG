@@ -24,41 +24,35 @@ Partial Class FormPembelian
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPembelian))
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.bayar = New System.Windows.Forms.TextBox()
+        Me.kembalian = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Min = New System.Windows.Forms.Button()
         Me.Cls = New System.Windows.Forms.Button()
         Me.Max = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.harga_beli = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.kode_barang = New System.Windows.Forms.TextBox()
+        Me.jumlah = New System.Windows.Forms.TextBox()
+        Me.no_nota_beli = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.button_hapus = New System.Windows.Forms.Button()
+        Me.button_edit = New System.Windows.Forms.Button()
+        Me.button_input = New System.Windows.Forms.Button()
+        Me.total_beli = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ButtonEdit = New System.Windows.Forms.Button()
-        Me.ButtonInput = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.button_batal = New System.Windows.Forms.Button()
+        Me.button_simpan = New System.Windows.Forms.Button()
         Me.Panel5.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -71,61 +65,27 @@ Partial Class FormPembelian
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel3.Location = New System.Drawing.Point(1044, 61)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 611)
+        Me.Panel3.Size = New System.Drawing.Size(10, 592)
         Me.Panel3.TabIndex = 32
         '
-        'TextBox9
+        'bayar
         '
-        Me.TextBox9.Location = New System.Drawing.Point(474, 120)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(172, 31)
-        Me.TextBox9.TabIndex = 34
+        Me.bayar.Location = New System.Drawing.Point(800, 46)
+        Me.bayar.Name = "bayar"
+        Me.bayar.Size = New System.Drawing.Size(178, 31)
+        Me.bayar.TabIndex = 29
         '
-        'Label11
+        'kembalian
         '
-        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label11.Location = New System.Drawing.Point(353, 118)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(105, 31)
-        Me.Label11.TabIndex = 33
-        Me.Label11.Text = "Stok"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(474, 44)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(172, 31)
-        Me.TextBox8.TabIndex = 32
-        '
-        'Label10
-        '
-        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label10.Location = New System.Drawing.Point(353, 44)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(105, 31)
-        Me.Label10.TabIndex = 31
-        Me.Label10.Text = "Ukuran"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(788, 81)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(187, 31)
-        Me.TextBox7.TabIndex = 29
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(788, 118)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(187, 31)
-        Me.TextBox6.TabIndex = 28
+        Me.kembalian.Location = New System.Drawing.Point(800, 83)
+        Me.kembalian.Name = "kembalian"
+        Me.kembalian.Size = New System.Drawing.Size(178, 31)
+        Me.kembalian.TabIndex = 28
         '
         'Label9
         '
         Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Location = New System.Drawing.Point(668, 120)
+        Me.Label9.Location = New System.Drawing.Point(680, 85)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(105, 31)
         Me.Label9.TabIndex = 27
@@ -135,7 +95,7 @@ Partial Class FormPembelian
         'Label8
         '
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Location = New System.Drawing.Point(668, 83)
+        Me.Label8.Location = New System.Drawing.Point(680, 48)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(105, 31)
         Me.Label8.TabIndex = 26
@@ -186,33 +146,17 @@ Partial Class FormPembelian
         Me.Panel5.Size = New System.Drawing.Size(145, 61)
         Me.Panel5.TabIndex = 3
         '
-        'TextBox5
+        'harga_beli
         '
-        Me.TextBox5.Location = New System.Drawing.Point(163, 120)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(175, 31)
-        Me.TextBox5.TabIndex = 25
-        '
-        'Label7
-        '
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Location = New System.Drawing.Point(19, 120)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(127, 31)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Nama Barang"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(474, 81)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(172, 31)
-        Me.TextBox3.TabIndex = 22
+        Me.harga_beli.Location = New System.Drawing.Point(474, 46)
+        Me.harga_beli.Name = "harga_beli"
+        Me.harga_beli.Size = New System.Drawing.Size(172, 31)
+        Me.harga_beli.TabIndex = 22
         '
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(15, 167)
+        Me.DataGridView2.Location = New System.Drawing.Point(15, 137)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 62
         Me.DataGridView2.RowTemplate.Height = 33
@@ -225,7 +169,7 @@ Partial Class FormPembelian
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 61)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(10, 611)
+        Me.Panel1.Size = New System.Drawing.Size(10, 592)
         Me.Panel1.TabIndex = 31
         '
         'Panel2
@@ -239,31 +183,43 @@ Partial Class FormPembelian
         Me.Panel2.Size = New System.Drawing.Size(1054, 61)
         Me.Panel2.TabIndex = 30
         '
-        'TextBox4
+        'Label12
         '
-        Me.TextBox4.Location = New System.Drawing.Point(163, 83)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(175, 31)
-        Me.TextBox4.TabIndex = 13
+        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label12.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label12.Location = New System.Drawing.Point(0, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(202, 61)
+        Me.Label12.TabIndex = 30
+        Me.Label12.Text = "Form Pembelian"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox2
+        'kode_barang
         '
-        Me.TextBox2.Location = New System.Drawing.Point(788, 46)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(187, 31)
-        Me.TextBox2.TabIndex = 11
+        Me.kode_barang.Location = New System.Drawing.Point(163, 83)
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.Size = New System.Drawing.Size(175, 31)
+        Me.kode_barang.TabIndex = 13
         '
-        'TextBox1
+        'jumlah
         '
-        Me.TextBox1.Location = New System.Drawing.Point(163, 46)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(175, 31)
-        Me.TextBox1.TabIndex = 10
+        Me.jumlah.Location = New System.Drawing.Point(474, 83)
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.Size = New System.Drawing.Size(172, 31)
+        Me.jumlah.TabIndex = 11
+        '
+        'no_nota_beli
+        '
+        Me.no_nota_beli.Location = New System.Drawing.Point(163, 46)
+        Me.no_nota_beli.Name = "no_nota_beli"
+        Me.no_nota_beli.Size = New System.Drawing.Size(175, 31)
+        Me.no_nota_beli.TabIndex = 10
         '
         'Label4
         '
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(353, 81)
+        Me.Label4.Location = New System.Drawing.Point(353, 46)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(105, 31)
         Me.Label4.TabIndex = 9
@@ -286,13 +242,13 @@ Partial Class FormPembelian
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(127, 31)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Nomor Beli"
+        Me.Label1.Text = "No. Nota Beli"
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Gray
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(0, 672)
+        Me.Panel4.Location = New System.Drawing.Point(0, 653)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1054, 10)
         Me.Panel4.TabIndex = 33
@@ -300,7 +256,7 @@ Partial Class FormPembelian
         'Label3
         '
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(668, 44)
+        Me.Label3.Location = New System.Drawing.Point(353, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(105, 31)
         Me.Label3.TabIndex = 8
@@ -309,122 +265,104 @@ Partial Class FormPembelian
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.button_hapus)
+        Me.GroupBox1.Controls.Add(Me.button_edit)
+        Me.GroupBox1.Controls.Add(Me.button_input)
+        Me.GroupBox1.Controls.Add(Me.total_beli)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
-        Me.GroupBox1.Controls.Add(Me.ButtonInput)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.button_batal)
+        Me.GroupBox1.Controls.Add(Me.button_simpan)
+        Me.GroupBox1.Controls.Add(Me.bayar)
+        Me.GroupBox1.Controls.Add(Me.kembalian)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.harga_beli)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.kode_barang)
+        Me.GroupBox1.Controls.Add(Me.jumlah)
+        Me.GroupBox1.Controls.Add(Me.no_nota_beli)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 89)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(993, 577)
+        Me.GroupBox1.Size = New System.Drawing.Size(993, 552)
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Pembelian"
         '
-        'Button3
+        'button_hapus
         '
-        Me.Button3.Location = New System.Drawing.Point(284, 466)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 36)
-        Me.Button3.TabIndex = 43
-        Me.Button3.Text = "Hapus"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.button_hapus.Location = New System.Drawing.Point(284, 436)
+        Me.button_hapus.Name = "button_hapus"
+        Me.button_hapus.Size = New System.Drawing.Size(110, 36)
+        Me.button_hapus.TabIndex = 43
+        Me.button_hapus.Text = "Hapus"
+        Me.button_hapus.UseVisualStyleBackColor = True
         '
-        'Button2
+        'button_edit
         '
-        Me.Button2.Location = New System.Drawing.Point(148, 466)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(110, 36)
-        Me.Button2.TabIndex = 42
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.button_edit.Location = New System.Drawing.Point(148, 436)
+        Me.button_edit.Name = "button_edit"
+        Me.button_edit.Size = New System.Drawing.Size(110, 36)
+        Me.button_edit.TabIndex = 42
+        Me.button_edit.Text = "Edit"
+        Me.button_edit.UseVisualStyleBackColor = True
         '
-        'Button1
+        'button_input
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 466)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 36)
-        Me.Button1.TabIndex = 41
-        Me.Button1.Text = "Input"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.button_input.Location = New System.Drawing.Point(22, 436)
+        Me.button_input.Name = "button_input"
+        Me.button_input.Size = New System.Drawing.Size(110, 36)
+        Me.button_input.TabIndex = 41
+        Me.button_input.Text = "Input"
+        Me.button_input.UseVisualStyleBackColor = True
         '
-        'Label6
+        'total_beli
         '
-        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.Location = New System.Drawing.Point(600, 466)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(378, 94)
-        Me.Label6.TabIndex = 40
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.total_beli.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.total_beli.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.total_beli.Location = New System.Drawing.Point(600, 436)
+        Me.total_beli.Name = "total_beli"
+        Me.total_beli.Size = New System.Drawing.Size(378, 94)
+        Me.total_beli.TabIndex = 40
+        Me.total_beli.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Label5.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(425, 466)
+        Me.Label5.Location = New System.Drawing.Point(425, 436)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(169, 94)
         Me.Label5.TabIndex = 39
         Me.Label5.Text = "Total :"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ButtonEdit
+        'button_batal
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(228, 525)
-        Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(166, 35)
-        Me.ButtonEdit.TabIndex = 38
-        Me.ButtonEdit.Text = "Batal"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
+        Me.button_batal.Location = New System.Drawing.Point(228, 495)
+        Me.button_batal.Name = "button_batal"
+        Me.button_batal.Size = New System.Drawing.Size(166, 35)
+        Me.button_batal.TabIndex = 38
+        Me.button_batal.Text = "Batal"
+        Me.button_batal.UseVisualStyleBackColor = True
         '
-        'ButtonInput
+        'button_simpan
         '
-        Me.ButtonInput.Location = New System.Drawing.Point(22, 525)
-        Me.ButtonInput.Name = "ButtonInput"
-        Me.ButtonInput.Size = New System.Drawing.Size(167, 35)
-        Me.ButtonInput.TabIndex = 37
-        Me.ButtonInput.Text = "Simpan"
-        Me.ButtonInput.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label12.Location = New System.Drawing.Point(0, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(202, 61)
-        Me.Label12.TabIndex = 30
-        Me.Label12.Text = "Form Pembelian"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.button_simpan.Location = New System.Drawing.Point(22, 495)
+        Me.button_simpan.Name = "button_simpan"
+        Me.button_simpan.Size = New System.Drawing.Size(167, 35)
+        Me.button_simpan.TabIndex = 37
+        Me.button_simpan.Text = "Simpan"
+        Me.button_simpan.UseVisualStyleBackColor = True
         '
         'FormPembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1054, 682)
+        Me.ClientSize = New System.Drawing.Size(1054, 663)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
@@ -444,39 +382,33 @@ Partial Class FormPembelian
     End Sub
 
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents bayar As TextBox
+    Friend WithEvents kembalian As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Min As Button
     Friend WithEvents Cls As Button
     Friend WithEvents Max As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents harga_beli As TextBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents kode_barang As TextBox
+    Friend WithEvents jumlah As TextBox
+    Friend WithEvents no_nota_beli As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label6 As Label
+    Friend WithEvents button_hapus As Button
+    Friend WithEvents button_edit As Button
+    Friend WithEvents button_input As Button
+    Friend WithEvents total_beli As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents ButtonEdit As Button
-    Friend WithEvents ButtonInput As Button
+    Friend WithEvents button_batal As Button
+    Friend WithEvents button_simpan As Button
     Friend WithEvents Label12 As Label
 End Class

@@ -24,17 +24,17 @@ Partial Class FormBarang
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormBarang))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.harga_jual = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.stok = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.ButtonTutup = New System.Windows.Forms.Button()
-        Me.ButtonHapus = New System.Windows.Forms.Button()
-        Me.ButtonEdit = New System.Windows.Forms.Button()
-        Me.ButtonInput = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.button_tutup = New System.Windows.Forms.Button()
+        Me.button_hapus = New System.Windows.Forms.Button()
+        Me.button_edit = New System.Windows.Forms.Button()
+        Me.button_input = New System.Windows.Forms.Button()
+        Me.nama_barang = New System.Windows.Forms.TextBox()
+        Me.harga_beli = New System.Windows.Forms.TextBox()
+        Me.kode_barang = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -48,8 +48,6 @@ Partial Class FormBarang
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
@@ -58,19 +56,17 @@ Partial Class FormBarang
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.harga_jual)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.stok)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Controls.Add(Me.ButtonTutup)
-        Me.GroupBox1.Controls.Add(Me.ButtonHapus)
-        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
-        Me.GroupBox1.Controls.Add(Me.ButtonInput)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.button_tutup)
+        Me.GroupBox1.Controls.Add(Me.button_hapus)
+        Me.GroupBox1.Controls.Add(Me.button_edit)
+        Me.GroupBox1.Controls.Add(Me.button_input)
+        Me.GroupBox1.Controls.Add(Me.nama_barang)
+        Me.GroupBox1.Controls.Add(Me.harga_beli)
+        Me.GroupBox1.Controls.Add(Me.kode_barang)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -82,97 +78,95 @@ Partial Class FormBarang
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Barang"
         '
-        'Label5
+        'harga_jual
         '
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(19, 233)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(156, 32)
-        Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Satuan"
+        Me.harga_jual.Location = New System.Drawing.Point(181, 157)
+        Me.harga_jual.Name = "harga_jual"
+        Me.harga_jual.Size = New System.Drawing.Size(391, 31)
+        Me.harga_jual.TabIndex = 24
         '
-        'TextBox3
+        'Label7
         '
-        Me.TextBox3.Location = New System.Drawing.Point(181, 193)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(215, 31)
-        Me.TextBox3.TabIndex = 21
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Label7.Location = New System.Drawing.Point(19, 157)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(156, 32)
+        Me.Label7.TabIndex = 23
+        Me.Label7.Text = "Harga Jual"
+        '
+        'stok
+        '
+        Me.stok.Location = New System.Drawing.Point(181, 193)
+        Me.stok.Name = "stok"
+        Me.stok.Size = New System.Drawing.Size(215, 31)
+        Me.stok.TabIndex = 21
         '
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(19, 335)
+        Me.DataGridView2.Location = New System.Drawing.Point(19, 299)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 62
         Me.DataGridView2.RowTemplate.Height = 33
         Me.DataGridView2.Size = New System.Drawing.Size(557, 287)
         Me.DataGridView2.TabIndex = 20
         '
-        'ButtonTutup
+        'button_tutup
         '
-        Me.ButtonTutup.Location = New System.Drawing.Point(419, 274)
-        Me.ButtonTutup.Name = "ButtonTutup"
-        Me.ButtonTutup.Size = New System.Drawing.Size(111, 33)
-        Me.ButtonTutup.TabIndex = 18
-        Me.ButtonTutup.Text = "Tutup"
-        Me.ButtonTutup.UseVisualStyleBackColor = True
+        Me.button_tutup.Location = New System.Drawing.Point(419, 242)
+        Me.button_tutup.Name = "button_tutup"
+        Me.button_tutup.Size = New System.Drawing.Size(111, 33)
+        Me.button_tutup.TabIndex = 18
+        Me.button_tutup.Text = "Tutup"
+        Me.button_tutup.UseVisualStyleBackColor = True
         '
-        'ButtonHapus
+        'button_hapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(286, 274)
-        Me.ButtonHapus.Name = "ButtonHapus"
-        Me.ButtonHapus.Size = New System.Drawing.Size(111, 33)
-        Me.ButtonHapus.TabIndex = 17
-        Me.ButtonHapus.Text = "Hapus"
-        Me.ButtonHapus.UseVisualStyleBackColor = True
+        Me.button_hapus.Location = New System.Drawing.Point(286, 242)
+        Me.button_hapus.Name = "button_hapus"
+        Me.button_hapus.Size = New System.Drawing.Size(111, 33)
+        Me.button_hapus.TabIndex = 17
+        Me.button_hapus.Text = "Hapus"
+        Me.button_hapus.UseVisualStyleBackColor = True
         '
-        'ButtonEdit
+        'button_edit
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(151, 274)
-        Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(111, 33)
-        Me.ButtonEdit.TabIndex = 16
-        Me.ButtonEdit.Text = "Edit"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
+        Me.button_edit.Location = New System.Drawing.Point(151, 242)
+        Me.button_edit.Name = "button_edit"
+        Me.button_edit.Size = New System.Drawing.Size(111, 33)
+        Me.button_edit.TabIndex = 16
+        Me.button_edit.Text = "Edit"
+        Me.button_edit.UseVisualStyleBackColor = True
         '
-        'ButtonInput
+        'button_input
         '
-        Me.ButtonInput.Location = New System.Drawing.Point(19, 274)
-        Me.ButtonInput.Name = "ButtonInput"
-        Me.ButtonInput.Size = New System.Drawing.Size(111, 33)
-        Me.ButtonInput.TabIndex = 15
-        Me.ButtonInput.Text = "Input"
-        Me.ButtonInput.UseVisualStyleBackColor = True
+        Me.button_input.Location = New System.Drawing.Point(19, 242)
+        Me.button_input.Name = "button_input"
+        Me.button_input.Size = New System.Drawing.Size(111, 33)
+        Me.button_input.TabIndex = 15
+        Me.button_input.Text = "Input"
+        Me.button_input.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'nama_barang
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Pcs", "Pack", "Box"})
-        Me.ComboBox1.Location = New System.Drawing.Point(181, 229)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(215, 33)
-        Me.ComboBox1.TabIndex = 14
+        Me.nama_barang.Location = New System.Drawing.Point(181, 83)
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.Size = New System.Drawing.Size(391, 31)
+        Me.nama_barang.TabIndex = 13
         '
-        'TextBox4
+        'harga_beli
         '
-        Me.TextBox4.Location = New System.Drawing.Point(181, 83)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(391, 31)
-        Me.TextBox4.TabIndex = 13
+        Me.harga_beli.Location = New System.Drawing.Point(181, 120)
+        Me.harga_beli.Name = "harga_beli"
+        Me.harga_beli.Size = New System.Drawing.Size(391, 31)
+        Me.harga_beli.TabIndex = 11
         '
-        'TextBox2
+        'kode_barang
         '
-        Me.TextBox2.Location = New System.Drawing.Point(181, 120)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(391, 31)
-        Me.TextBox2.TabIndex = 11
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(181, 47)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 31)
-        Me.TextBox1.TabIndex = 10
+        Me.kode_barang.Location = New System.Drawing.Point(181, 47)
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.Size = New System.Drawing.Size(215, 31)
+        Me.kode_barang.TabIndex = 10
         '
         'Label4
         '
@@ -181,7 +175,7 @@ Partial Class FormBarang
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(156, 32)
         Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Jumlah"
+        Me.Label4.Text = "Stok"
         '
         'Label3
         '
@@ -304,22 +298,6 @@ Partial Class FormBarang
         Me.Label6.Text = "Form Barang"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(181, 157)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(391, 31)
-        Me.TextBox5.TabIndex = 24
-        '
-        'Label7
-        '
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label7.Location = New System.Drawing.Point(19, 157)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(156, 32)
-        Me.Label7.TabIndex = 23
-        Me.Label7.Text = "Harga Jual"
-        '
         'FormBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -345,14 +323,13 @@ Partial Class FormBarang
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents ButtonTutup As Button
-    Friend WithEvents ButtonHapus As Button
-    Friend WithEvents ButtonEdit As Button
-    Friend WithEvents ButtonInput As Button
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents button_tutup As Button
+    Friend WithEvents button_hapus As Button
+    Friend WithEvents button_edit As Button
+    Friend WithEvents button_input As Button
+    Friend WithEvents nama_barang As TextBox
+    Friend WithEvents harga_beli As TextBox
+    Friend WithEvents kode_barang As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -365,9 +342,8 @@ Partial Class FormBarang
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents stok As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents harga_jual As TextBox
     Friend WithEvents Label7 As Label
 End Class

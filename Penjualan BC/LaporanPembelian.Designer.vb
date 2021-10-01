@@ -28,16 +28,16 @@ Partial Class FormLaporanPembelian
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.cetak_nota_bulanan = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cetak_nota_harian = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cetak_nota_mingguan = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -46,8 +46,8 @@ Partial Class FormLaporanPembelian
         Me.Max = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ButtonInput = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.cetak_nota = New System.Windows.Forms.Button()
+        Me.laporan_per_nota = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -101,7 +101,7 @@ Partial Class FormLaporanPembelian
         Me.GroupBox4.Controls.Add(Me.ComboBox2)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.ComboBox1)
-        Me.GroupBox4.Controls.Add(Me.Button3)
+        Me.GroupBox4.Controls.Add(Me.cetak_nota_bulanan)
         Me.GroupBox4.Controls.Add(Me.Label4)
         Me.GroupBox4.Location = New System.Drawing.Point(462, 365)
         Me.GroupBox4.Name = "GroupBox4"
@@ -110,14 +110,14 @@ Partial Class FormLaporanPembelian
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Laporan Pembelian Bulanan"
         '
-        'Button3
+        'cetak_nota_bulanan
         '
-        Me.Button3.Location = New System.Drawing.Point(19, 189)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(363, 34)
-        Me.Button3.TabIndex = 15
-        Me.Button3.Text = "Cetak"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.cetak_nota_bulanan.Location = New System.Drawing.Point(19, 189)
+        Me.cetak_nota_bulanan.Name = "cetak_nota_bulanan"
+        Me.cetak_nota_bulanan.Size = New System.Drawing.Size(363, 34)
+        Me.cetak_nota_bulanan.TabIndex = 15
+        Me.cetak_nota_bulanan.Text = "Cetak"
+        Me.cetak_nota_bulanan.UseVisualStyleBackColor = True
         '
         'DateTimePicker1
         '
@@ -126,14 +126,14 @@ Partial Class FormLaporanPembelian
         Me.DateTimePicker1.Size = New System.Drawing.Size(254, 31)
         Me.DateTimePicker1.TabIndex = 17
         '
-        'Button2
+        'cetak_nota_harian
         '
-        Me.Button2.Location = New System.Drawing.Point(19, 147)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(363, 34)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "Cetak"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.cetak_nota_harian.Location = New System.Drawing.Point(19, 147)
+        Me.cetak_nota_harian.Name = "cetak_nota_harian"
+        Me.cetak_nota_harian.Size = New System.Drawing.Size(363, 34)
+        Me.cetak_nota_harian.TabIndex = 15
+        Me.cetak_nota_harian.Text = "Cetak"
+        Me.cetak_nota_harian.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -147,7 +147,7 @@ Partial Class FormLaporanPembelian
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox3.Controls.Add(Me.Button2)
+        Me.GroupBox3.Controls.Add(Me.cetak_nota_harian)
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Location = New System.Drawing.Point(462, 89)
         Me.GroupBox3.Name = "GroupBox3"
@@ -161,7 +161,7 @@ Partial Class FormLaporanPembelian
         Me.GroupBox2.Controls.Add(Me.DateTimePicker3)
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.cetak_nota_mingguan)
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Location = New System.Drawing.Point(31, 365)
         Me.GroupBox2.Name = "GroupBox2"
@@ -193,14 +193,14 @@ Partial Class FormLaporanPembelian
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Tgl Awal"
         '
-        'Button1
+        'cetak_nota_mingguan
         '
-        Me.Button1.Location = New System.Drawing.Point(19, 189)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(349, 34)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Cetak"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.cetak_nota_mingguan.Location = New System.Drawing.Point(19, 189)
+        Me.cetak_nota_mingguan.Name = "cetak_nota_mingguan"
+        Me.cetak_nota_mingguan.Size = New System.Drawing.Size(349, 34)
+        Me.cetak_nota_mingguan.TabIndex = 15
+        Me.cetak_nota_mingguan.Text = "Cetak"
+        Me.cetak_nota_mingguan.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -282,21 +282,21 @@ Partial Class FormLaporanPembelian
         Me.Panel1.Size = New System.Drawing.Size(10, 580)
         Me.Panel1.TabIndex = 34
         '
-        'ButtonInput
+        'cetak_nota
         '
-        Me.ButtonInput.Location = New System.Drawing.Point(19, 147)
-        Me.ButtonInput.Name = "ButtonInput"
-        Me.ButtonInput.Size = New System.Drawing.Size(349, 34)
-        Me.ButtonInput.TabIndex = 15
-        Me.ButtonInput.Text = "Cetak"
-        Me.ButtonInput.UseVisualStyleBackColor = True
+        Me.cetak_nota.Location = New System.Drawing.Point(19, 147)
+        Me.cetak_nota.Name = "cetak_nota"
+        Me.cetak_nota.Size = New System.Drawing.Size(349, 34)
+        Me.cetak_nota.TabIndex = 15
+        Me.cetak_nota.Text = "Cetak"
+        Me.cetak_nota.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'laporan_per_nota
         '
-        Me.TextBox1.Location = New System.Drawing.Point(114, 46)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(254, 31)
-        Me.TextBox1.TabIndex = 10
+        Me.laporan_per_nota.Location = New System.Drawing.Point(114, 46)
+        Me.laporan_per_nota.Name = "laporan_per_nota"
+        Me.laporan_per_nota.Size = New System.Drawing.Size(254, 31)
+        Me.laporan_per_nota.TabIndex = 10
         '
         'Label1
         '
@@ -309,8 +309,8 @@ Partial Class FormLaporanPembelian
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ButtonInput)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.cetak_nota)
+        Me.GroupBox1.Controls.Add(Me.laporan_per_nota)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 89)
         Me.GroupBox1.Name = "GroupBox1"
@@ -375,16 +375,16 @@ Partial Class FormLaporanPembelian
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents cetak_nota_bulanan As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Button2 As Button
+    Friend WithEvents cetak_nota_harian As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePicker3 As DateTimePicker
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents cetak_nota_mingguan As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
@@ -393,8 +393,8 @@ Partial Class FormLaporanPembelian
     Friend WithEvents Max As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents ButtonInput As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents cetak_nota As Button
+    Friend WithEvents laporan_per_nota As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Panel2 As Panel

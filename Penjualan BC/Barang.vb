@@ -36,17 +36,17 @@
     Private Sub Min_Click(sender As Object, e As EventArgs) Handles Min.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+    Private Sub TextBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles harga_beli.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If
     End Sub
-    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles stok.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If
     End Sub
-    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles harga_jual.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If

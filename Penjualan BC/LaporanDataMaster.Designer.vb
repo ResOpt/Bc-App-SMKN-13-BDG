@@ -24,9 +24,9 @@ Partial Class FormLaporanDataMaster
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLaporanDataMaster))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.user = New System.Windows.Forms.Button()
-        Me.barang = New System.Windows.Forms.Button()
-        Me.admin = New System.Windows.Forms.Button()
+        Me.button_user = New System.Windows.Forms.Button()
+        Me.button_barang = New System.Windows.Forms.Button()
+        Me.button_admin = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Min = New System.Windows.Forms.Button()
@@ -43,9 +43,9 @@ Partial Class FormLaporanDataMaster
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.user)
-        Me.GroupBox1.Controls.Add(Me.barang)
-        Me.GroupBox1.Controls.Add(Me.admin)
+        Me.GroupBox1.Controls.Add(Me.button_user)
+        Me.GroupBox1.Controls.Add(Me.button_barang)
+        Me.GroupBox1.Controls.Add(Me.button_admin)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 89)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(563, 155)
@@ -53,32 +53,32 @@ Partial Class FormLaporanDataMaster
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Laporan Data Master"
         '
-        'user
+        'button_user
         '
-        Me.user.Location = New System.Drawing.Point(212, 59)
-        Me.user.Name = "user"
-        Me.user.Size = New System.Drawing.Size(168, 59)
-        Me.user.TabIndex = 17
-        Me.user.Text = "User"
-        Me.user.UseVisualStyleBackColor = True
+        Me.button_user.Location = New System.Drawing.Point(212, 59)
+        Me.button_user.Name = "button_user"
+        Me.button_user.Size = New System.Drawing.Size(168, 59)
+        Me.button_user.TabIndex = 17
+        Me.button_user.Text = "User"
+        Me.button_user.UseVisualStyleBackColor = True
         '
-        'barang
+        'button_barang
         '
-        Me.barang.Location = New System.Drawing.Point(396, 59)
-        Me.barang.Name = "barang"
-        Me.barang.Size = New System.Drawing.Size(142, 59)
-        Me.barang.TabIndex = 16
-        Me.barang.Text = "Barang"
-        Me.barang.UseVisualStyleBackColor = True
+        Me.button_barang.Location = New System.Drawing.Point(396, 59)
+        Me.button_barang.Name = "button_barang"
+        Me.button_barang.Size = New System.Drawing.Size(142, 59)
+        Me.button_barang.TabIndex = 16
+        Me.button_barang.Text = "Barang"
+        Me.button_barang.UseVisualStyleBackColor = True
         '
-        'admin
+        'button_admin
         '
-        Me.admin.Location = New System.Drawing.Point(27, 59)
-        Me.admin.Name = "admin"
-        Me.admin.Size = New System.Drawing.Size(168, 59)
-        Me.admin.TabIndex = 15
-        Me.admin.Text = "Admin"
-        Me.admin.UseVisualStyleBackColor = True
+        Me.button_admin.Location = New System.Drawing.Point(27, 59)
+        Me.button_admin.Name = "button_admin"
+        Me.button_admin.Size = New System.Drawing.Size(168, 59)
+        Me.button_admin.TabIndex = 15
+        Me.button_admin.Text = "Admin"
+        Me.button_admin.UseVisualStyleBackColor = True
         '
         'Panel3
         '
@@ -196,8 +196,8 @@ Partial Class FormLaporanDataMaster
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents barang As Button
-    Friend WithEvents admin As Button
+    Friend WithEvents button_barang As Button
+    Friend WithEvents button_admin As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Min As Button
@@ -206,6 +206,6 @@ Partial Class FormLaporanDataMaster
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents user As Button
+    Friend WithEvents button_user As Button
     Friend WithEvents Label6 As Label
 End Class

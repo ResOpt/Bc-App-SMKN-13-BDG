@@ -73,38 +73,38 @@
     Private Sub AdminToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdminToolStripMenuItem.Click
         FormAdmin.ShowDialog()
     End Sub
-    Private Sub Admin_Click(sender As Object, e As EventArgs) Handles Admin.Click
+    Private Sub Admin_Click(sender As Object, e As EventArgs) Handles admin.Click
         FormAdmin.ShowDialog()
     End Sub
 
-    Private Sub Barang_Click(sender As Object, e As EventArgs) Handles Barang.Click
+    Private Sub Barang_Click(sender As Object, e As EventArgs) Handles barang.Click
         FormBarang.ShowDialog()
     End Sub
     Private Sub BarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem.Click
         FormBarang.ShowDialog()
     End Sub
-    Private Sub Penjualan_Click(sender As Object, e As EventArgs) Handles Penjualan.Click
+    Private Sub Penjualan_Click(sender As Object, e As EventArgs) Handles penjualan.Click
         FormPenjualan.ShowDialog()
     End Sub
     Private Sub PenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenjualanToolStripMenuItem.Click
         FormPenjualan.ShowDialog()
     End Sub
 
-    Private Sub LapData_Click(sender As Object, e As EventArgs) Handles LaporanData.Click
+    Private Sub LapData_Click(sender As Object, e As EventArgs) Handles laporan_data.Click
         FormLaporanDataMaster.ShowDialog()
     End Sub
 
     Private Sub LaporanDataMasterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanDataMasterToolStripMenuItem.Click
         FormLaporanDataMaster.ShowDialog()
     End Sub
-    Private Sub LapPenjualan_Click(sender As Object, e As EventArgs) Handles LaporanPenjualan.Click
+    Private Sub LapPenjualan_Click(sender As Object, e As EventArgs) Handles laporan_penjualan.Click
         FormLaporanPenjualan.ShowDialog()
     End Sub
     Private Sub LaporanPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPenjualanToolStripMenuItem.Click
         FormLaporanPenjualan.ShowDialog()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Pembelian.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles pembelian.Click
         FormPembelian.ShowDialog()
     End Sub
 
@@ -114,27 +114,10 @@
     Private Sub LaporanPembelianToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPembelianToolStripMenuItem.Click
         FormLaporanPembelian.ShowDialog()
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles LaporanPembelian.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles laporan_pembelian.Click
         FormLaporanPembelian.ShowDialog()
     End Sub
-
-    Private Sub Dashboard_Paint(sender As Object, e As PaintEventArgs) Handles Dashboard.Paint
-
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        Login.ShowDialog()
-    End Sub
-
-    Private Sub LblUsername_Click(sender As Object, e As EventArgs) Handles LblUsername.Click
-
-    End Sub
-
-    Private Sub LblStatus_Click(sender As Object, e As EventArgs) Handles LblStatus.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs)
-
+    Private Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
+        MessageBox.Show("Apakah Yakin Ingin Keluar ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
     End Sub
 End Class

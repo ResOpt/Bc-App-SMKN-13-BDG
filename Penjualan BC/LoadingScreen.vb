@@ -5,7 +5,7 @@
             Timer1.Enabled = False
             Me.Hide()
             Form1.Show()
-
+            Login.ShowDialog()
         End If
     End Sub
 End Class
