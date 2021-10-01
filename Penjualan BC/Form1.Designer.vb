@@ -371,13 +371,13 @@ Partial Class Form1
         'AdminToolStripMenuItem
         '
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.AdminToolStripMenuItem.Text = "Admin"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
@@ -390,13 +390,13 @@ Partial Class Form1
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'LaporanToolStripMenuItem

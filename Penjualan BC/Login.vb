@@ -43,6 +43,8 @@ Public Class Login
             Form1.LblStatus.Text = connect.get_status(user)
             Debug.WriteLine("USER: " & user)
             ClearTextBoxes(Me)
+            Form1.Menu.Enabled = True
+            Form1.MenuStrip1.Visible = True
             If connect.get_status(user) = "Admin" Then
 
             Else

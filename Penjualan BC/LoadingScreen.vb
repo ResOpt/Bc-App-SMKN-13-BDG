@@ -5,6 +5,8 @@
             Timer1.Enabled = False
             Me.Hide()
             Form1.Show()
+            Form1.MenuStrip1.Visible = False
+            Form1.Menu.Enabled = False
             Login.ShowDialog()
         End If
     End Sub
