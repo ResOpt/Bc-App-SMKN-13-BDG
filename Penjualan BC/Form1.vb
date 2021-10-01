@@ -90,21 +90,21 @@
         FormPenjualan.ShowDialog()
     End Sub
 
-    Private Sub LapData_Click(sender As Object, e As EventArgs) Handles LapData.Click
+    Private Sub LapData_Click(sender As Object, e As EventArgs) Handles LaporanData.Click
         FormLaporanDataMaster.ShowDialog()
     End Sub
 
     Private Sub LaporanDataMasterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanDataMasterToolStripMenuItem.Click
         FormLaporanDataMaster.ShowDialog()
     End Sub
-    Private Sub LapPenjualan_Click(sender As Object, e As EventArgs) Handles LapPenjualan.Click
+    Private Sub LapPenjualan_Click(sender As Object, e As EventArgs) Handles LaporanPenjualan.Click
         FormLaporanPenjualan.ShowDialog()
     End Sub
     Private Sub LaporanPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPenjualanToolStripMenuItem.Click
         FormLaporanPenjualan.ShowDialog()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Pembelian.Click
         FormPembelian.ShowDialog()
     End Sub
 
@@ -114,7 +114,7 @@
     Private Sub LaporanPembelianToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPembelianToolStripMenuItem.Click
         FormLaporanPembelian.ShowDialog()
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles LaporanPembelian.Click
         FormLaporanPembelian.ShowDialog()
     End Sub
 
@@ -122,7 +122,7 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         Login.ShowDialog()
     End Sub
 
@@ -134,7 +134,7 @@
 
     End Sub
 
-    Private Sub Label9_Click(sender As Object, e As EventArgs) 
+    Private Sub Label9_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

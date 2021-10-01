@@ -43,8 +43,14 @@ Public Class Login
             Form1.LblStatus.Text = connect.get_status(user)
             Debug.WriteLine("USER: " & user)
             ClearTextBoxes(Me)
+            If connect.get_status(user) = "Admin" Then
+
+            Else
+                Form1.AdminToolStripMenuItem.Visible = False
+                Form1.Admin.Visible = False
+            End If
         Else
-            MessageBox.Show("Login gagal!")
+                MessageBox.Show("Login gagal!")
             ClearTextBoxes(Me)
         End If
     End Sub

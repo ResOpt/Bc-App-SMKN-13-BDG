@@ -24,9 +24,9 @@ Partial Class FormLaporanDataMaster
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLaporanDataMaster))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ButtonEdit = New System.Windows.Forms.Button()
-        Me.ButtonInput = New System.Windows.Forms.Button()
+        Me.user = New System.Windows.Forms.Button()
+        Me.barang = New System.Windows.Forms.Button()
+        Me.admin = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Min = New System.Windows.Forms.Button()
@@ -43,9 +43,9 @@ Partial Class FormLaporanDataMaster
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
-        Me.GroupBox1.Controls.Add(Me.ButtonInput)
+        Me.GroupBox1.Controls.Add(Me.user)
+        Me.GroupBox1.Controls.Add(Me.barang)
+        Me.GroupBox1.Controls.Add(Me.admin)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 89)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(563, 155)
@@ -53,32 +53,32 @@ Partial Class FormLaporanDataMaster
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Laporan Data Master"
         '
-        'Button1
+        'user
         '
-        Me.Button1.Location = New System.Drawing.Point(212, 59)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(168, 59)
-        Me.Button1.TabIndex = 17
-        Me.Button1.Text = "User"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.user.Location = New System.Drawing.Point(212, 59)
+        Me.user.Name = "user"
+        Me.user.Size = New System.Drawing.Size(168, 59)
+        Me.user.TabIndex = 17
+        Me.user.Text = "User"
+        Me.user.UseVisualStyleBackColor = True
         '
-        'ButtonEdit
+        'barang
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(396, 59)
-        Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(142, 59)
-        Me.ButtonEdit.TabIndex = 16
-        Me.ButtonEdit.Text = "Barang"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
+        Me.barang.Location = New System.Drawing.Point(396, 59)
+        Me.barang.Name = "barang"
+        Me.barang.Size = New System.Drawing.Size(142, 59)
+        Me.barang.TabIndex = 16
+        Me.barang.Text = "Barang"
+        Me.barang.UseVisualStyleBackColor = True
         '
-        'ButtonInput
+        'admin
         '
-        Me.ButtonInput.Location = New System.Drawing.Point(27, 59)
-        Me.ButtonInput.Name = "ButtonInput"
-        Me.ButtonInput.Size = New System.Drawing.Size(168, 59)
-        Me.ButtonInput.TabIndex = 15
-        Me.ButtonInput.Text = "Admin"
-        Me.ButtonInput.UseVisualStyleBackColor = True
+        Me.admin.Location = New System.Drawing.Point(27, 59)
+        Me.admin.Name = "admin"
+        Me.admin.Size = New System.Drawing.Size(168, 59)
+        Me.admin.TabIndex = 15
+        Me.admin.Text = "Admin"
+        Me.admin.UseVisualStyleBackColor = True
         '
         'Panel3
         '
@@ -196,8 +196,8 @@ Partial Class FormLaporanDataMaster
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents ButtonEdit As Button
-    Friend WithEvents ButtonInput As Button
+    Friend WithEvents barang As Button
+    Friend WithEvents admin As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Min As Button
@@ -206,6 +206,6 @@ Partial Class FormLaporanDataMaster
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents user As Button
     Friend WithEvents Label6 As Label
 End Class

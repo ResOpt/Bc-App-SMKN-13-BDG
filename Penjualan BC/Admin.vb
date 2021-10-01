@@ -50,7 +50,7 @@
         If is_empty(Me) Then
             MessageBox.Show("Isi semua kolom form!!")
         Else
-            Dim reg = connection.register(TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, ComboBox1.Text)
+            Dim reg = connection.register(user_id.Text, password.Text, konfirmasi.Text, nama_admin.Text, level.Text)
             If reg = Status.Success Then
                 MessageBox.Show("User berhasil didaftarkan")
                 ClearTextBoxes(Me)
@@ -67,19 +67,19 @@
         End If
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles user_id.TextChanged
 
     End Sub
 
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles nama_admin.TextChanged
 
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
 
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles level.SelectedIndexChanged
 
     End Sub
 
@@ -87,7 +87,7 @@
 
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles konfirmasi.TextChanged
 
     End Sub
 End Class

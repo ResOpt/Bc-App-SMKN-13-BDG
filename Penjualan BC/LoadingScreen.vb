@@ -5,6 +5,7 @@
             Timer1.Enabled = False
             Me.Hide()
             Form1.Show()
+
         End If
     End Sub
 End Class
