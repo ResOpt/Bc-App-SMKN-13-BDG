@@ -27,6 +27,7 @@ Public Class Login
         End If
     End Sub
     Private Sub Cls_Click(sender As Object, e As EventArgs) Handles Cls.Click
+        LoadingScreen.Close()
         Me.Close()
     End Sub
 
