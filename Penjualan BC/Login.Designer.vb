@@ -40,10 +40,9 @@ Partial Class Login
         Me.LblPassword.AutoSize = True
         Me.LblPassword.Font = New System.Drawing.Font("Segoe UI Black", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblPassword.ForeColor = System.Drawing.Color.Black
-        Me.LblPassword.Location = New System.Drawing.Point(24, 197)
-        Me.LblPassword.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblPassword.Location = New System.Drawing.Point(34, 328)
         Me.LblPassword.Name = "LblPassword"
-        Me.LblPassword.Size = New System.Drawing.Size(81, 20)
+        Me.LblPassword.Size = New System.Drawing.Size(118, 30)
         Me.LblPassword.TabIndex = 13
         Me.LblPassword.Text = "Password"
         '
@@ -52,47 +51,43 @@ Partial Class Login
         Me.LblUsername.AutoSize = True
         Me.LblUsername.Font = New System.Drawing.Font("Segoe UI Black", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblUsername.ForeColor = System.Drawing.Color.Black
-        Me.LblUsername.Location = New System.Drawing.Point(22, 160)
-        Me.LblUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblUsername.Location = New System.Drawing.Point(31, 267)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(81, 20)
+        Me.LblUsername.Size = New System.Drawing.Size(121, 30)
         Me.LblUsername.TabIndex = 12
         Me.LblUsername.Text = "Username"
         '
         'Password
         '
         Me.Password.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Password.Location = New System.Drawing.Point(119, 200)
-        Me.Password.Margin = New System.Windows.Forms.Padding(2)
+        Me.Password.Location = New System.Drawing.Point(170, 333)
         Me.Password.Name = "Password"
-        Me.Password.Size = New System.Drawing.Size(126, 16)
+        Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.Password.Size = New System.Drawing.Size(180, 24)
         Me.Password.TabIndex = 11
         '
         'Username
         '
         Me.Username.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Username.Location = New System.Drawing.Point(119, 164)
-        Me.Username.Margin = New System.Windows.Forms.Padding(2)
+        Me.Username.Location = New System.Drawing.Point(170, 273)
         Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(126, 16)
+        Me.Username.Size = New System.Drawing.Size(180, 24)
         Me.Username.TabIndex = 10
         '
         'LogoAkun
         '
         Me.LogoAkun.Image = CType(resources.GetObject("LogoAkun.Image"), System.Drawing.Image)
-        Me.LogoAkun.Location = New System.Drawing.Point(66, 35)
-        Me.LogoAkun.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LogoAkun.Location = New System.Drawing.Point(94, 58)
         Me.LogoAkun.Name = "LogoAkun"
-        Me.LogoAkun.Size = New System.Drawing.Size(132, 105)
+        Me.LogoAkun.Size = New System.Drawing.Size(189, 175)
         Me.LogoAkun.TabIndex = 9
         '
         'ButtonRegister
         '
         Me.ButtonRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.ButtonRegister.Location = New System.Drawing.Point(135, 240)
-        Me.ButtonRegister.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonRegister.Location = New System.Drawing.Point(193, 400)
         Me.ButtonRegister.Name = "ButtonRegister"
-        Me.ButtonRegister.Size = New System.Drawing.Size(78, 20)
+        Me.ButtonRegister.Size = New System.Drawing.Size(111, 33)
         Me.ButtonRegister.TabIndex = 16
         Me.ButtonRegister.Text = "Register"
         Me.ButtonRegister.UseVisualStyleBackColor = True
@@ -100,10 +95,9 @@ Partial Class Login
         'ButtonLogin
         '
         Me.ButtonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black
-        Me.ButtonLogin.Location = New System.Drawing.Point(40, 240)
-        Me.ButtonLogin.Margin = New System.Windows.Forms.Padding(2)
+        Me.ButtonLogin.Location = New System.Drawing.Point(57, 400)
         Me.ButtonLogin.Name = "ButtonLogin"
-        Me.ButtonLogin.Size = New System.Drawing.Size(78, 20)
+        Me.ButtonLogin.Size = New System.Drawing.Size(111, 33)
         Me.ButtonLogin.TabIndex = 15
         Me.ButtonLogin.Text = "Login"
         Me.ButtonLogin.UseVisualStyleBackColor = True
@@ -114,9 +108,8 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.Cls)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(260, 21)
+        Me.Panel1.Size = New System.Drawing.Size(371, 35)
         Me.Panel1.TabIndex = 14
         '
         'Cls
@@ -124,18 +117,17 @@ Partial Class Login
         Me.Cls.FlatAppearance.BorderSize = 0
         Me.Cls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Cls.Image = Global.Penjualan_BC.My.Resources.Resources.close
-        Me.Cls.Location = New System.Drawing.Point(231, 0)
-        Me.Cls.Margin = New System.Windows.Forms.Padding(2)
+        Me.Cls.Location = New System.Drawing.Point(330, 0)
         Me.Cls.Name = "Cls"
-        Me.Cls.Size = New System.Drawing.Size(29, 20)
+        Me.Cls.Size = New System.Drawing.Size(41, 33)
         Me.Cls.TabIndex = 0
         Me.Cls.UseVisualStyleBackColor = True
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(260, 295)
+        Me.ClientSize = New System.Drawing.Size(371, 492)
         Me.Controls.Add(Me.LblPassword)
         Me.Controls.Add(Me.LblUsername)
         Me.Controls.Add(Me.Password)
@@ -145,7 +137,6 @@ Partial Class Login
         Me.Controls.Add(Me.ButtonLogin)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Panel1.ResumeLayout(False)
