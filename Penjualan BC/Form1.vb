@@ -124,6 +124,8 @@
             MenuStrip1.Visible = False
             PnlMenu.Visible = False
             user = vbNullString
+            LblStatus.Text = ""
+            LblUsername.Text = ""
             Login.ShowDialog()
         End If
     End Sub
