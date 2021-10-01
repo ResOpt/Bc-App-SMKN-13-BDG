@@ -46,7 +46,7 @@ Public Class Login
             ClearTextBoxes(Me)
             Form1.Menu.Enabled = True
             Form1.MenuStrip1.Visible = True
-            Login.Close()
+            Me.Close()
             If connect.get_status(user) = "Admin" Then
 
             Else
