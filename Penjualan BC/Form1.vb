@@ -122,6 +122,7 @@
         If result = DialogResult.Yes Then
             Menu.Enabled = False
             MenuStrip1.Visible = False
+            PnlMenu.Visible = False
             Login.ShowDialog()
         End If
     End Sub
