@@ -53,6 +53,7 @@ Public Class Login
                 Form1.AdminToolStripMenuItem.Visible = False
                 Form1.admin.Visible = False
                 Form1.Label1.Visible = False
+                Form1.GroupBox1.Width = 76
             End If
         Else
                 MessageBox.Show("Login gagal!")

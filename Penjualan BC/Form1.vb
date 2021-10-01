@@ -126,7 +126,6 @@
             user = vbNullString
             LblStatus.Text = ""
             LblUsername.Text = ""
-            GroupBox1.Width = 76
             Login.ShowDialog()
         End If
     End Sub
