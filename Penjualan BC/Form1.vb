@@ -133,4 +133,8 @@
     Private Sub LblStatus_Click(sender As Object, e As EventArgs) Handles LblStatus.Click
 
     End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class

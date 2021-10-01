@@ -72,7 +72,6 @@ Partial Class Form1
         Me.Max = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Dashboard = New System.Windows.Forms.Panel()
         Me.Panel6.SuspendLayout()
@@ -95,9 +94,8 @@ Partial Class Form1
         Me.Panel6.Controls.Add(Me.LblStatus)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(127, 32)
+        Me.Panel6.Size = New System.Drawing.Size(181, 53)
         Me.Panel6.TabIndex = 5
         '
         'LblUsername
@@ -105,10 +103,9 @@ Partial Class Form1
         Me.LblUsername.AutoSize = True
         Me.LblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LblUsername.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.LblUsername.Location = New System.Drawing.Point(8, 9)
-        Me.LblUsername.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblUsername.Location = New System.Drawing.Point(11, 15)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(71, 19)
+        Me.LblUsername.Size = New System.Drawing.Size(99, 28)
         Me.LblUsername.TabIndex = 3
         Me.LblUsername.Text = "Username"
         '
@@ -117,10 +114,9 @@ Partial Class Form1
         Me.LblStatus.AutoSize = True
         Me.LblStatus.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.LblStatus.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.LblStatus.Location = New System.Drawing.Point(89, 13)
-        Me.LblStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.LblStatus.Location = New System.Drawing.Point(127, 22)
         Me.LblStatus.Name = "LblStatus"
-        Me.LblStatus.Size = New System.Drawing.Size(39, 13)
+        Me.LblStatus.Size = New System.Drawing.Size(52, 21)
         Me.LblStatus.TabIndex = 4
         Me.LblStatus.Text = "Status"
         '
@@ -133,18 +129,18 @@ Partial Class Form1
         Me.PnlMenu.Controls.Add(Me.GroupBox3)
         Me.PnlMenu.Controls.Add(Me.GroupBox2)
         Me.PnlMenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PnlMenu.Location = New System.Drawing.Point(0, 61)
-        Me.PnlMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.PnlMenu.Location = New System.Drawing.Point(0, 95)
         Me.PnlMenu.Name = "PnlMenu"
-        Me.PnlMenu.Size = New System.Drawing.Size(718, 90)
+        Me.PnlMenu.Size = New System.Drawing.Size(1026, 150)
         Me.PnlMenu.TabIndex = 7
         Me.PnlMenu.Visible = False
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(563, 13)
+        Me.Button4.Location = New System.Drawing.Point(804, 22)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(56, 48)
+        Me.Button4.Size = New System.Drawing.Size(80, 80)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "Login"
         Me.Button4.UseVisualStyleBackColor = True
@@ -155,11 +151,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Barang)
         Me.GroupBox1.Controls.Add(Me.Admin)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 2)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(102, 86)
+        Me.GroupBox1.Size = New System.Drawing.Size(146, 143)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Master"
@@ -167,20 +161,18 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(52, 56)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(74, 93)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 15)
+        Me.Label3.Size = New System.Drawing.Size(67, 25)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Barang"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 56)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(4, 93)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 15)
+        Me.Label1.Size = New System.Drawing.Size(65, 25)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin"
         '
@@ -189,10 +181,9 @@ Partial Class Form1
         Me.Barang.FlatAppearance.BorderSize = 0
         Me.Barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Barang.Image = CType(resources.GetObject("Barang.Image"), System.Drawing.Image)
-        Me.Barang.Location = New System.Drawing.Point(51, 16)
-        Me.Barang.Margin = New System.Windows.Forms.Padding(2)
+        Me.Barang.Location = New System.Drawing.Point(73, 27)
         Me.Barang.Name = "Barang"
-        Me.Barang.Size = New System.Drawing.Size(45, 38)
+        Me.Barang.Size = New System.Drawing.Size(64, 63)
         Me.Barang.TabIndex = 2
         Me.Barang.UseVisualStyleBackColor = True
         '
@@ -201,10 +192,9 @@ Partial Class Form1
         Me.Admin.FlatAppearance.BorderSize = 0
         Me.Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Admin.Image = CType(resources.GetObject("Admin.Image"), System.Drawing.Image)
-        Me.Admin.Location = New System.Drawing.Point(2, 16)
-        Me.Admin.Margin = New System.Windows.Forms.Padding(2)
+        Me.Admin.Location = New System.Drawing.Point(3, 27)
         Me.Admin.Name = "Admin"
-        Me.Admin.Size = New System.Drawing.Size(45, 38)
+        Me.Admin.Size = New System.Drawing.Size(64, 63)
         Me.Admin.TabIndex = 0
         Me.Admin.UseVisualStyleBackColor = True
         '
@@ -212,11 +202,9 @@ Partial Class Form1
         '
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.Button1)
-        Me.GroupBox4.Location = New System.Drawing.Point(489, 2)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox4.Location = New System.Drawing.Point(699, 3)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox4.Size = New System.Drawing.Size(69, 86)
+        Me.GroupBox4.Size = New System.Drawing.Size(99, 143)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Keluar"
@@ -224,10 +212,9 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(5, 55)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(7, 92)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 15)
+        Me.Label7.Size = New System.Drawing.Size(69, 25)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Logout"
         '
@@ -236,10 +223,9 @@ Partial Class Form1
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(8, 13)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Location = New System.Drawing.Point(11, 22)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(45, 38)
+        Me.Button1.Size = New System.Drawing.Size(64, 63)
         Me.Button1.TabIndex = 6
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -251,21 +237,18 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.LapPenjualan)
         Me.GroupBox3.Controls.Add(Me.LapData)
-        Me.GroupBox3.Location = New System.Drawing.Point(249, 2)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Location = New System.Drawing.Point(356, 3)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox3.Size = New System.Drawing.Size(235, 86)
+        Me.GroupBox3.Size = New System.Drawing.Size(336, 143)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Laporan"
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(162, 50)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(231, 83)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 35)
+        Me.Label8.Size = New System.Drawing.Size(99, 58)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Laporan Pembelian"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -275,29 +258,26 @@ Partial Class Form1
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(177, 14)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button3.Location = New System.Drawing.Point(253, 23)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(45, 38)
+        Me.Button3.Size = New System.Drawing.Size(64, 63)
         Me.Button3.TabIndex = 10
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(94, 50)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(134, 83)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(66, 35)
+        Me.Label6.Size = New System.Drawing.Size(94, 58)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Laporan Penjualan"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
-        Me.Label5.Location = New System.Drawing.Point(10, 50)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(14, 83)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(79, 35)
+        Me.Label5.Size = New System.Drawing.Size(113, 58)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Laporan Data Master"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -307,10 +287,9 @@ Partial Class Form1
         Me.LapPenjualan.FlatAppearance.BorderSize = 0
         Me.LapPenjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LapPenjualan.Image = CType(resources.GetObject("LapPenjualan.Image"), System.Drawing.Image)
-        Me.LapPenjualan.Location = New System.Drawing.Point(109, 14)
-        Me.LapPenjualan.Margin = New System.Windows.Forms.Padding(2)
+        Me.LapPenjualan.Location = New System.Drawing.Point(156, 23)
         Me.LapPenjualan.Name = "LapPenjualan"
-        Me.LapPenjualan.Size = New System.Drawing.Size(45, 38)
+        Me.LapPenjualan.Size = New System.Drawing.Size(64, 63)
         Me.LapPenjualan.TabIndex = 8
         Me.LapPenjualan.UseVisualStyleBackColor = True
         '
@@ -319,10 +298,9 @@ Partial Class Form1
         Me.LapData.FlatAppearance.BorderSize = 0
         Me.LapData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LapData.Image = CType(resources.GetObject("LapData.Image"), System.Drawing.Image)
-        Me.LapData.Location = New System.Drawing.Point(26, 14)
-        Me.LapData.Margin = New System.Windows.Forms.Padding(2)
+        Me.LapData.Location = New System.Drawing.Point(37, 23)
         Me.LapData.Name = "LapData"
-        Me.LapData.Size = New System.Drawing.Size(45, 38)
+        Me.LapData.Size = New System.Drawing.Size(64, 63)
         Me.LapData.TabIndex = 7
         Me.LapData.UseVisualStyleBackColor = True
         '
@@ -332,11 +310,9 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.Penjualan)
-        Me.GroupBox2.Location = New System.Drawing.Point(113, 2)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Location = New System.Drawing.Point(161, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(132, 86)
+        Me.GroupBox2.Size = New System.Drawing.Size(189, 143)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Transaksi"
@@ -344,10 +320,9 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(63, 55)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(90, 92)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 15)
+        Me.Label2.Size = New System.Drawing.Size(93, 25)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Pembelian"
         '
@@ -356,20 +331,18 @@ Partial Class Form1
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(72, 14)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Location = New System.Drawing.Point(103, 23)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(45, 38)
+        Me.Button2.Size = New System.Drawing.Size(64, 63)
         Me.Button2.TabIndex = 7
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(5, 55)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(7, 92)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 15)
+        Me.Label4.Size = New System.Drawing.Size(86, 25)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Penjualan"
         '
@@ -378,10 +351,9 @@ Partial Class Form1
         Me.Penjualan.FlatAppearance.BorderSize = 0
         Me.Penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Penjualan.Image = CType(resources.GetObject("Penjualan.Image"), System.Drawing.Image)
-        Me.Penjualan.Location = New System.Drawing.Point(12, 14)
-        Me.Penjualan.Margin = New System.Windows.Forms.Padding(2)
+        Me.Penjualan.Location = New System.Drawing.Point(17, 23)
         Me.Penjualan.Name = "Penjualan"
-        Me.Penjualan.Size = New System.Drawing.Size(45, 38)
+        Me.Penjualan.Size = New System.Drawing.Size(64, 63)
         Me.Penjualan.TabIndex = 6
         Me.Penjualan.UseVisualStyleBackColor = True
         '
@@ -390,10 +362,9 @@ Partial Class Form1
         Me.MenuStrip1.BackColor = System.Drawing.Color.DarkGray
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MaterToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.LaporanToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 37)
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 62)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
-        Me.MenuStrip1.Size = New System.Drawing.Size(718, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1026, 33)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -401,63 +372,63 @@ Partial Class Form1
         '
         Me.MaterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdminToolStripMenuItem, Me.BarangToolStripMenuItem})
         Me.MaterToolStripMenuItem.Name = "MaterToolStripMenuItem"
-        Me.MaterToolStripMenuItem.Size = New System.Drawing.Size(55, 22)
+        Me.MaterToolStripMenuItem.Size = New System.Drawing.Size(82, 29)
         Me.MaterToolStripMenuItem.Text = "Master"
         '
         'AdminToolStripMenuItem
         '
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.AdminToolStripMenuItem.Text = "Admin"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
         '
         Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PenjualanToolStripMenuItem, Me.PembelianToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
-        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(66, 22)
+        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(98, 29)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'LaporanToolStripMenuItem
         '
         Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaporanDataMasterToolStripMenuItem, Me.LaporanPenjualanToolStripMenuItem, Me.LaporanPembelianToolStripMenuItem})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
-        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(62, 22)
+        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(92, 29)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
         '
         'LaporanDataMasterToolStripMenuItem
         '
         Me.LaporanDataMasterToolStripMenuItem.Name = "LaporanDataMasterToolStripMenuItem"
-        Me.LaporanDataMasterToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.LaporanDataMasterToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
         Me.LaporanDataMasterToolStripMenuItem.Text = "Laporan Data Master"
         '
         'LaporanPenjualanToolStripMenuItem
         '
         Me.LaporanPenjualanToolStripMenuItem.Name = "LaporanPenjualanToolStripMenuItem"
-        Me.LaporanPenjualanToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.LaporanPenjualanToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
         Me.LaporanPenjualanToolStripMenuItem.Text = "Laporan Penjualan"
         '
         'LaporanPembelianToolStripMenuItem
         '
         Me.LaporanPembelianToolStripMenuItem.Name = "LaporanPembelianToolStripMenuItem"
-        Me.LaporanPembelianToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.LaporanPembelianToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
         Me.LaporanPembelianToolStripMenuItem.Text = "Laporan Pembelian"
         '
         'Panel3
@@ -465,20 +436,18 @@ Partial Class Form1
         Me.Panel3.Controls.Add(Me.Wkt)
         Me.Panel3.Controls.Add(Me.Tgl)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel3.Location = New System.Drawing.Point(605, 0)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel3.Location = New System.Drawing.Point(865, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(113, 32)
+        Me.Panel3.Size = New System.Drawing.Size(161, 53)
         Me.Panel3.TabIndex = 0
         '
         'Wkt
         '
         Me.Wkt.AutoSize = True
         Me.Wkt.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Wkt.Location = New System.Drawing.Point(62, 4)
-        Me.Wkt.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Wkt.Location = New System.Drawing.Point(89, 7)
         Me.Wkt.Name = "Wkt"
-        Me.Wkt.Size = New System.Drawing.Size(41, 15)
+        Me.Wkt.Size = New System.Drawing.Size(62, 25)
         Me.Wkt.TabIndex = 19
         Me.Wkt.Text = "Waktu"
         '
@@ -486,10 +455,9 @@ Partial Class Form1
         '
         Me.Tgl.AutoSize = True
         Me.Tgl.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Tgl.Location = New System.Drawing.Point(2, 4)
-        Me.Tgl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Tgl.Location = New System.Drawing.Point(3, 7)
         Me.Tgl.Name = "Tgl"
-        Me.Tgl.Size = New System.Drawing.Size(48, 15)
+        Me.Tgl.Size = New System.Drawing.Size(73, 25)
         Me.Tgl.TabIndex = 1
         Me.Tgl.Text = "Tanggal"
         '
@@ -499,10 +467,9 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 441)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel1.Location = New System.Drawing.Point(0, 735)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(718, 32)
+        Me.Panel1.Size = New System.Drawing.Size(1026, 53)
         Me.Panel1.TabIndex = 6
         '
         'Panel4
@@ -510,9 +477,8 @@ Partial Class Form1
         Me.Panel4.Controls.Add(Me.Menu)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(49, 37)
+        Me.Panel4.Size = New System.Drawing.Size(70, 62)
         Me.Panel4.TabIndex = 5
         '
         'Menu
@@ -520,10 +486,9 @@ Partial Class Form1
         Me.Menu.FlatAppearance.BorderSize = 0
         Me.Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Menu.Image = Global.Penjualan_BC.My.Resources.Resources.menu
-        Me.Menu.Location = New System.Drawing.Point(8, 8)
-        Me.Menu.Margin = New System.Windows.Forms.Padding(2)
+        Me.Menu.Location = New System.Drawing.Point(11, 13)
         Me.Menu.Name = "Menu"
-        Me.Menu.Size = New System.Drawing.Size(30, 19)
+        Me.Menu.Size = New System.Drawing.Size(43, 32)
         Me.Menu.TabIndex = 0
         Me.Menu.UseVisualStyleBackColor = True
         '
@@ -535,10 +500,9 @@ Partial Class Form1
         Me.Min.FlatAppearance.BorderSize = 0
         Me.Min.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Min.Image = CType(resources.GetObject("Min.Image"), System.Drawing.Image)
-        Me.Min.Location = New System.Drawing.Point(6, 6)
-        Me.Min.Margin = New System.Windows.Forms.Padding(2)
+        Me.Min.Location = New System.Drawing.Point(9, 10)
         Me.Min.Name = "Min"
-        Me.Min.Size = New System.Drawing.Size(29, 27)
+        Me.Min.Size = New System.Drawing.Size(41, 45)
         Me.Min.TabIndex = 2
         Me.Min.UseVisualStyleBackColor = True
         '
@@ -547,10 +511,9 @@ Partial Class Form1
         Me.Cls.FlatAppearance.BorderSize = 0
         Me.Cls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Cls.Image = Global.Penjualan_BC.My.Resources.Resources.close
-        Me.Cls.Location = New System.Drawing.Point(72, 5)
-        Me.Cls.Margin = New System.Windows.Forms.Padding(2)
+        Me.Cls.Location = New System.Drawing.Point(103, 8)
         Me.Cls.Name = "Cls"
-        Me.Cls.Size = New System.Drawing.Size(27, 28)
+        Me.Cls.Size = New System.Drawing.Size(39, 47)
         Me.Cls.TabIndex = 0
         Me.Cls.UseVisualStyleBackColor = True
         '
@@ -559,10 +522,9 @@ Partial Class Form1
         Me.Max.FlatAppearance.BorderSize = 0
         Me.Max.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Max.Image = CType(resources.GetObject("Max.Image"), System.Drawing.Image)
-        Me.Max.Location = New System.Drawing.Point(39, 6)
-        Me.Max.Margin = New System.Windows.Forms.Padding(2)
+        Me.Max.Location = New System.Drawing.Point(56, 10)
         Me.Max.Name = "Max"
-        Me.Max.Size = New System.Drawing.Size(29, 27)
+        Me.Max.Size = New System.Drawing.Size(41, 45)
         Me.Max.TabIndex = 1
         Me.Max.UseVisualStyleBackColor = True
         '
@@ -572,37 +534,21 @@ Partial Class Form1
         Me.Panel5.Controls.Add(Me.Cls)
         Me.Panel5.Controls.Add(Me.Max)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(616, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Panel5.Location = New System.Drawing.Point(880, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(102, 37)
+        Me.Panel5.Size = New System.Drawing.Size(146, 62)
         Me.Panel5.TabIndex = 3
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Gray
-        Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Controls.Add(Me.Panel4)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(718, 37)
+        Me.Panel2.Size = New System.Drawing.Size(1026, 62)
         Me.Panel2.TabIndex = 5
-        '
-        'Label9
-        '
-        Me.Label9.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label9.Location = New System.Drawing.Point(49, 0)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(113, 37)
-        Me.Label9.TabIndex = 30
-        Me.Label9.Text = "Menu Utama"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Timer1
         '
@@ -610,17 +556,16 @@ Partial Class Form1
         'Dashboard
         '
         Me.Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Dashboard.Location = New System.Drawing.Point(0, 37)
-        Me.Dashboard.Margin = New System.Windows.Forms.Padding(2)
+        Me.Dashboard.Location = New System.Drawing.Point(0, 62)
         Me.Dashboard.Name = "Dashboard"
-        Me.Dashboard.Size = New System.Drawing.Size(718, 404)
+        Me.Dashboard.Size = New System.Drawing.Size(1026, 673)
         Me.Dashboard.TabIndex = 8
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(718, 473)
+        Me.ClientSize = New System.Drawing.Size(1026, 788)
         Me.Controls.Add(Me.PnlMenu)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Dashboard)
@@ -628,7 +573,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama"
@@ -705,6 +649,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents PembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LaporanPembelianToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label9 As Label
     Friend WithEvents Button4 As Button
 End Class
