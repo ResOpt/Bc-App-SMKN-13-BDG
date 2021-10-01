@@ -52,6 +52,7 @@ Public Class Login
             Else
                 Form1.AdminToolStripMenuItem.Visible = False
                 Form1.admin.Visible = False
+                Form1.Label1.Visible = False
             End If
         Else
                 MessageBox.Show("Login gagal!")

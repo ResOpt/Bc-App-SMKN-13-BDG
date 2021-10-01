@@ -74,6 +74,8 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Dashboard = New System.Windows.Forms.Panel()
+        Me.PanelAdmin = New System.Windows.Forms.Panel()
+        Me.PanelBarang = New System.Windows.Forms.Panel()
         Me.Panel6.SuspendLayout()
         Me.PnlMenu.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -86,6 +88,8 @@ Partial Class Form1
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.PanelAdmin.SuspendLayout()
+        Me.PanelBarang.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel6
@@ -127,7 +131,6 @@ Partial Class Form1
         Me.PnlMenu.Controls.Add(Me.GroupBox3)
         Me.PnlMenu.Controls.Add(Me.GroupBox2)
         Me.PnlMenu.Controls.Add(Me.GroupBox1)
-        Me.PnlMenu.Dock = System.Windows.Forms.DockStyle.Top
         Me.PnlMenu.Location = New System.Drawing.Point(0, 95)
         Me.PnlMenu.Name = "PnlMenu"
         Me.PnlMenu.Size = New System.Drawing.Size(1026, 149)
@@ -298,10 +301,8 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.barang)
-        Me.GroupBox1.Controls.Add(Me.admin)
+        Me.GroupBox1.Controls.Add(Me.PanelBarang)
+        Me.GroupBox1.Controls.Add(Me.PanelAdmin)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
@@ -313,7 +314,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(74, 93)
+        Me.Label3.Location = New System.Drawing.Point(4, 77)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 25)
         Me.Label3.TabIndex = 5
@@ -322,7 +323,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(4, 93)
+        Me.Label1.Location = New System.Drawing.Point(3, 77)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 25)
         Me.Label1.TabIndex = 3
@@ -333,7 +334,7 @@ Partial Class Form1
         Me.barang.FlatAppearance.BorderSize = 0
         Me.barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.barang.Image = CType(resources.GetObject("barang.Image"), System.Drawing.Image)
-        Me.barang.Location = New System.Drawing.Point(73, 27)
+        Me.barang.Location = New System.Drawing.Point(6, 7)
         Me.barang.Name = "barang"
         Me.barang.Size = New System.Drawing.Size(64, 63)
         Me.barang.TabIndex = 2
@@ -344,7 +345,7 @@ Partial Class Form1
         Me.admin.FlatAppearance.BorderSize = 0
         Me.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.admin.Image = CType(resources.GetObject("admin.Image"), System.Drawing.Image)
-        Me.admin.Location = New System.Drawing.Point(3, 27)
+        Me.admin.Location = New System.Drawing.Point(4, 4)
         Me.admin.Name = "admin"
         Me.admin.Size = New System.Drawing.Size(64, 63)
         Me.admin.TabIndex = 0
@@ -567,6 +568,26 @@ Partial Class Form1
         Me.Dashboard.Size = New System.Drawing.Size(1026, 673)
         Me.Dashboard.TabIndex = 8
         '
+        'PanelAdmin
+        '
+        Me.PanelAdmin.Controls.Add(Me.admin)
+        Me.PanelAdmin.Controls.Add(Me.Label1)
+        Me.PanelAdmin.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelAdmin.Location = New System.Drawing.Point(3, 27)
+        Me.PanelAdmin.Name = "PanelAdmin"
+        Me.PanelAdmin.Size = New System.Drawing.Size(70, 119)
+        Me.PanelAdmin.TabIndex = 8
+        '
+        'PanelBarang
+        '
+        Me.PanelBarang.Controls.Add(Me.Label3)
+        Me.PanelBarang.Controls.Add(Me.barang)
+        Me.PanelBarang.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PanelBarang.Location = New System.Drawing.Point(73, 27)
+        Me.PanelBarang.Name = "PanelBarang"
+        Me.PanelBarang.Size = New System.Drawing.Size(76, 119)
+        Me.PanelBarang.TabIndex = 0
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -592,7 +613,6 @@ Partial Class Form1
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -600,6 +620,10 @@ Partial Class Form1
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
+        Me.PanelAdmin.ResumeLayout(False)
+        Me.PanelAdmin.PerformLayout()
+        Me.PanelBarang.ResumeLayout(False)
+        Me.PanelBarang.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -655,4 +679,6 @@ Partial Class Form1
     Friend WithEvents PembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LaporanPembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label9 As Label
+    Friend WithEvents PanelBarang As Panel
+    Friend WithEvents PanelAdmin As Panel
 End Class

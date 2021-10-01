@@ -118,6 +118,11 @@
         FormLaporanPembelian.ShowDialog()
     End Sub
     Private Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
-        MessageBox.Show("Apakah Yakin Ingin Keluar ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim result As DialogResult = MessageBox.Show("Apakah Yakin Ingin Keluar ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Menu.Enabled = False
+            MenuStrip1.Visible = False
+            Login.ShowDialog()
+        End If
     End Sub
 End Class
