@@ -109,9 +109,8 @@ Partial Class Form1
         Me.LblUsername.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.LblUsername.Location = New System.Drawing.Point(11, 15)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(99, 28)
+        Me.LblUsername.Size = New System.Drawing.Size(0, 28)
         Me.LblUsername.TabIndex = 3
-        Me.LblUsername.Text = "Username"
         '
         'LblStatus
         '
@@ -120,9 +119,8 @@ Partial Class Form1
         Me.LblStatus.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.LblStatus.Location = New System.Drawing.Point(127, 22)
         Me.LblStatus.Name = "LblStatus"
-        Me.LblStatus.Size = New System.Drawing.Size(52, 21)
+        Me.LblStatus.Size = New System.Drawing.Size(0, 21)
         Me.LblStatus.TabIndex = 4
-        Me.LblStatus.Text = "Status"
         '
         'PnlMenu
         '
