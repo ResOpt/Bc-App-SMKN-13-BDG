@@ -144,7 +144,7 @@ Partial Class Form1
         Me.GroupBox1.Size = New System.Drawing.Size(119, 149)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Persediaan"
+        Me.GroupBox1.Text = "Keluar"
         '
         'Label7
         '
@@ -180,7 +180,7 @@ Partial Class Form1
         Me.GroupBox2.Size = New System.Drawing.Size(329, 149)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Transaksi"
+        Me.GroupBox2.Text = "Laporan"
         '
         'laporan_data
         '
@@ -245,7 +245,7 @@ Partial Class Form1
         Me.GroupBox5.Size = New System.Drawing.Size(193, 149)
         Me.GroupBox5.TabIndex = 9
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Admin"
+        Me.GroupBox5.Text = "Transaksi"
         '
         'Label4
         '
