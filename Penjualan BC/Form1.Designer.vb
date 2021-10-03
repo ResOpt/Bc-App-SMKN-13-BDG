@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.logout = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.laporan_data = New System.Windows.Forms.Button()
         Me.laporan_penjualan = New System.Windows.Forms.Button()
         Me.laporan_pembelian = New System.Windows.Forms.Button()
@@ -48,7 +49,6 @@ Partial Class Form1
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.admin = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MaterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -139,9 +139,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.logout)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox1.Location = New System.Drawing.Point(693, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(687, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(119, 149)
+        Me.GroupBox1.Size = New System.Drawing.Size(84, 149)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Keluar"
@@ -175,12 +175,21 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox2.Location = New System.Drawing.Point(364, 0)
+        Me.GroupBox2.Location = New System.Drawing.Point(358, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(329, 149)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Laporan"
+        '
+        'Label6
+        '
+        Me.Label6.Location = New System.Drawing.Point(119, 88)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(94, 58)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Laporan Penjualan"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'laporan_data
         '
@@ -240,7 +249,7 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.pembelian)
         Me.GroupBox5.Controls.Add(Me.Label2)
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox5.Location = New System.Drawing.Point(171, 0)
+        Me.GroupBox5.Location = New System.Drawing.Point(165, 0)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(193, 149)
         Me.GroupBox5.TabIndex = 9
@@ -292,7 +301,7 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.barang)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox3.Location = New System.Drawing.Point(96, 0)
+        Me.GroupBox3.Location = New System.Drawing.Point(90, 0)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(75, 149)
         Me.GroupBox3.TabIndex = 1
@@ -326,7 +335,7 @@ Partial Class Form1
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(96, 149)
+        Me.GroupBox4.Size = New System.Drawing.Size(90, 149)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Admin"
@@ -351,15 +360,6 @@ Partial Class Form1
         Me.admin.TabIndex = 0
         Me.admin.UseVisualStyleBackColor = True
         '
-        'Label6
-        '
-        Me.Label6.Location = New System.Drawing.Point(119, 88)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 58)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Laporan Penjualan"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.DarkGray
@@ -381,13 +381,13 @@ Partial Class Form1
         'AdminToolStripMenuItem
         '
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.AdminToolStripMenuItem.Text = "Admin"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
