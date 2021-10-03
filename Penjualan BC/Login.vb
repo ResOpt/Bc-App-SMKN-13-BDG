@@ -51,6 +51,7 @@ Public Class Login
 
             Else
                 Form1.GroupBox4.Visible = False
+                Form1.AdminToolStripMenuItem.Visible = False
             End If
         Else
                 MessageBox.Show("Login gagal!")
