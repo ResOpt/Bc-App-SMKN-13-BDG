@@ -50,10 +50,7 @@ Public Class Login
             If connect.get_status(user) = "Admin" Then
 
             Else
-                Form1.AdminToolStripMenuItem.Visible = False
-                Form1.admin.Visible = False
-                Form1.Label1.Visible = False
-                Form1.GroupBox1.Width = 76
+                Form1.GroupBox4.Visible = False
             End If
         Else
                 MessageBox.Show("Login gagal!")

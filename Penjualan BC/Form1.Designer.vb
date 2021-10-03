@@ -28,26 +28,27 @@ Partial Class Form1
         Me.LblUsername = New System.Windows.Forms.Label()
         Me.LblStatus = New System.Windows.Forms.Label()
         Me.PnlMenu = New System.Windows.Forms.Panel()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.logout = New System.Windows.Forms.Button()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.laporan_pembelian = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.laporan_penjualan = New System.Windows.Forms.Button()
-        Me.laporan_data = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.pembelian = New System.Windows.Forms.Button()
+        Me.laporan_data = New System.Windows.Forms.Button()
+        Me.laporan_penjualan = New System.Windows.Forms.Button()
+        Me.laporan_pembelian = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.penjualan = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.pembelian = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.barang = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.admin = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MaterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdminToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -74,22 +75,19 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Dashboard = New System.Windows.Forms.Panel()
-        Me.PanelAdmin = New System.Windows.Forms.Panel()
-        Me.PanelBarang = New System.Windows.Forms.Panel()
         Me.Panel6.SuspendLayout()
         Me.PnlMenu.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.PanelAdmin.SuspendLayout()
-        Me.PanelBarang.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel6
@@ -125,32 +123,33 @@ Partial Class Form1
         'PnlMenu
         '
         Me.PnlMenu.BackColor = System.Drawing.Color.LightGray
-        Me.PnlMenu.Controls.Add(Me.GroupBox4)
-        Me.PnlMenu.Controls.Add(Me.GroupBox3)
-        Me.PnlMenu.Controls.Add(Me.GroupBox2)
         Me.PnlMenu.Controls.Add(Me.GroupBox1)
+        Me.PnlMenu.Controls.Add(Me.GroupBox2)
+        Me.PnlMenu.Controls.Add(Me.GroupBox5)
+        Me.PnlMenu.Controls.Add(Me.GroupBox3)
+        Me.PnlMenu.Controls.Add(Me.GroupBox4)
         Me.PnlMenu.Location = New System.Drawing.Point(0, 95)
         Me.PnlMenu.Name = "PnlMenu"
         Me.PnlMenu.Size = New System.Drawing.Size(1026, 149)
         Me.PnlMenu.TabIndex = 7
         Me.PnlMenu.Visible = False
         '
-        'GroupBox4
+        'GroupBox1
         '
-        Me.GroupBox4.Controls.Add(Me.Label7)
-        Me.GroupBox4.Controls.Add(Me.logout)
-        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox4.Location = New System.Drawing.Point(671, 0)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(96, 149)
-        Me.GroupBox4.TabIndex = 7
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Keluar"
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.logout)
+        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupBox1.Location = New System.Drawing.Point(693, 0)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(119, 149)
+        Me.GroupBox1.TabIndex = 0
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Persediaan"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(15, 89)
+        Me.Label7.Location = New System.Drawing.Point(6, 105)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(69, 25)
         Me.Label7.TabIndex = 6
@@ -161,126 +160,97 @@ Partial Class Form1
         Me.logout.FlatAppearance.BorderSize = 0
         Me.logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.logout.Image = CType(resources.GetObject("logout.Image"), System.Drawing.Image)
-        Me.logout.Location = New System.Drawing.Point(15, 23)
+        Me.logout.Location = New System.Drawing.Point(11, 30)
         Me.logout.Name = "logout"
         Me.logout.Size = New System.Drawing.Size(64, 63)
         Me.logout.TabIndex = 6
         Me.logout.UseVisualStyleBackColor = True
         '
-        'GroupBox3
+        'GroupBox2
         '
-        Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Controls.Add(Me.laporan_pembelian)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Controls.Add(Me.laporan_penjualan)
-        Me.GroupBox3.Controls.Add(Me.laporan_data)
-        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox3.Location = New System.Drawing.Point(335, 0)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(336, 149)
-        Me.GroupBox3.TabIndex = 1
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Laporan"
-        '
-        'Label8
-        '
-        Me.Label8.Location = New System.Drawing.Point(231, 83)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(99, 58)
-        Me.Label8.TabIndex = 11
-        Me.Label8.Text = "Laporan Pembelian"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'laporan_pembelian
-        '
-        Me.laporan_pembelian.FlatAppearance.BorderSize = 0
-        Me.laporan_pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.laporan_pembelian.Image = CType(resources.GetObject("laporan_pembelian.Image"), System.Drawing.Image)
-        Me.laporan_pembelian.Location = New System.Drawing.Point(253, 23)
-        Me.laporan_pembelian.Name = "laporan_pembelian"
-        Me.laporan_pembelian.Size = New System.Drawing.Size(64, 63)
-        Me.laporan_pembelian.TabIndex = 10
-        Me.laporan_pembelian.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        Me.Label6.Location = New System.Drawing.Point(134, 83)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 58)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Laporan Penjualan"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label5
-        '
-        Me.Label5.Location = New System.Drawing.Point(14, 83)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 58)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Laporan Data Master"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'laporan_penjualan
-        '
-        Me.laporan_penjualan.FlatAppearance.BorderSize = 0
-        Me.laporan_penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.laporan_penjualan.Image = CType(resources.GetObject("laporan_penjualan.Image"), System.Drawing.Image)
-        Me.laporan_penjualan.Location = New System.Drawing.Point(156, 23)
-        Me.laporan_penjualan.Name = "laporan_penjualan"
-        Me.laporan_penjualan.Size = New System.Drawing.Size(64, 63)
-        Me.laporan_penjualan.TabIndex = 8
-        Me.laporan_penjualan.UseVisualStyleBackColor = True
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.laporan_data)
+        Me.GroupBox2.Controls.Add(Me.laporan_penjualan)
+        Me.GroupBox2.Controls.Add(Me.laporan_pembelian)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupBox2.Location = New System.Drawing.Point(364, 0)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(329, 149)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Transaksi"
         '
         'laporan_data
         '
         Me.laporan_data.FlatAppearance.BorderSize = 0
         Me.laporan_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.laporan_data.Image = CType(resources.GetObject("laporan_data.Image"), System.Drawing.Image)
-        Me.laporan_data.Location = New System.Drawing.Point(37, 23)
+        Me.laporan_data.Location = New System.Drawing.Point(23, 30)
         Me.laporan_data.Name = "laporan_data"
         Me.laporan_data.Size = New System.Drawing.Size(64, 63)
         Me.laporan_data.TabIndex = 7
         Me.laporan_data.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'laporan_penjualan
         '
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.pembelian)
-        Me.GroupBox2.Controls.Add(Me.Label4)
-        Me.GroupBox2.Controls.Add(Me.penjualan)
-        Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox2.Location = New System.Drawing.Point(146, 0)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(189, 149)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Transaksi"
+        Me.laporan_penjualan.FlatAppearance.BorderSize = 0
+        Me.laporan_penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.laporan_penjualan.Image = CType(resources.GetObject("laporan_penjualan.Image"), System.Drawing.Image)
+        Me.laporan_penjualan.Location = New System.Drawing.Point(133, 30)
+        Me.laporan_penjualan.Name = "laporan_penjualan"
+        Me.laporan_penjualan.Size = New System.Drawing.Size(64, 63)
+        Me.laporan_penjualan.TabIndex = 8
+        Me.laporan_penjualan.UseVisualStyleBackColor = True
         '
-        'Label2
+        'laporan_pembelian
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(90, 92)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 25)
-        Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Pembelian"
+        Me.laporan_pembelian.FlatAppearance.BorderSize = 0
+        Me.laporan_pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.laporan_pembelian.Image = CType(resources.GetObject("laporan_pembelian.Image"), System.Drawing.Image)
+        Me.laporan_pembelian.Location = New System.Drawing.Point(234, 22)
+        Me.laporan_pembelian.Name = "laporan_pembelian"
+        Me.laporan_pembelian.Size = New System.Drawing.Size(64, 63)
+        Me.laporan_pembelian.TabIndex = 10
+        Me.laporan_pembelian.UseVisualStyleBackColor = True
         '
-        'pembelian
+        'Label8
         '
-        Me.pembelian.FlatAppearance.BorderSize = 0
-        Me.pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.pembelian.Image = CType(resources.GetObject("pembelian.Image"), System.Drawing.Image)
-        Me.pembelian.Location = New System.Drawing.Point(103, 23)
-        Me.pembelian.Name = "pembelian"
-        Me.pembelian.Size = New System.Drawing.Size(64, 63)
-        Me.pembelian.TabIndex = 7
-        Me.pembelian.UseVisualStyleBackColor = True
+        Me.Label8.Location = New System.Drawing.Point(219, 88)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(99, 58)
+        Me.Label8.TabIndex = 11
+        Me.Label8.Text = "Laporan Pembelian"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.Location = New System.Drawing.Point(0, 88)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(113, 58)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "Laporan Data Master"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.Controls.Add(Me.Label4)
+        Me.GroupBox5.Controls.Add(Me.penjualan)
+        Me.GroupBox5.Controls.Add(Me.pembelian)
+        Me.GroupBox5.Controls.Add(Me.Label2)
+        Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupBox5.Location = New System.Drawing.Point(171, 0)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(193, 149)
+        Me.GroupBox5.TabIndex = 9
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Admin"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 92)
+        Me.Label4.Location = New System.Drawing.Point(6, 105)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 25)
         Me.Label4.TabIndex = 6
@@ -291,63 +261,104 @@ Partial Class Form1
         Me.penjualan.FlatAppearance.BorderSize = 0
         Me.penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.penjualan.Image = CType(resources.GetObject("penjualan.Image"), System.Drawing.Image)
-        Me.penjualan.Location = New System.Drawing.Point(17, 23)
+        Me.penjualan.Location = New System.Drawing.Point(14, 30)
         Me.penjualan.Name = "penjualan"
         Me.penjualan.Size = New System.Drawing.Size(64, 63)
         Me.penjualan.TabIndex = 6
         Me.penjualan.UseVisualStyleBackColor = True
         '
-        'GroupBox1
+        'pembelian
         '
-        Me.GroupBox1.Controls.Add(Me.PanelBarang)
-        Me.GroupBox1.Controls.Add(Me.PanelAdmin)
-        Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(146, 149)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Master"
+        Me.pembelian.FlatAppearance.BorderSize = 0
+        Me.pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.pembelian.Image = CType(resources.GetObject("pembelian.Image"), System.Drawing.Image)
+        Me.pembelian.Location = New System.Drawing.Point(111, 30)
+        Me.pembelian.Name = "pembelian"
+        Me.pembelian.Size = New System.Drawing.Size(64, 63)
+        Me.pembelian.TabIndex = 7
+        Me.pembelian.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(98, 105)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(93, 25)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Pembelian"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label3)
+        Me.GroupBox3.Controls.Add(Me.barang)
+        Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupBox3.Location = New System.Drawing.Point(96, 0)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(75, 149)
+        Me.GroupBox3.TabIndex = 1
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Stok"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(4, 77)
+        Me.Label3.Location = New System.Drawing.Point(6, 105)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(67, 25)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Barang"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 77)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 25)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Admin"
         '
         'barang
         '
         Me.barang.FlatAppearance.BorderSize = 0
         Me.barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.barang.Image = CType(resources.GetObject("barang.Image"), System.Drawing.Image)
-        Me.barang.Location = New System.Drawing.Point(6, 7)
+        Me.barang.Location = New System.Drawing.Point(6, 30)
         Me.barang.Name = "barang"
         Me.barang.Size = New System.Drawing.Size(64, 63)
         Me.barang.TabIndex = 2
         Me.barang.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Label1)
+        Me.GroupBox4.Controls.Add(Me.admin)
+        Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Left
+        Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(96, 149)
+        Me.GroupBox4.TabIndex = 7
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Admin"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 105)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 25)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Admin"
         '
         'admin
         '
         Me.admin.FlatAppearance.BorderSize = 0
         Me.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.admin.Image = CType(resources.GetObject("admin.Image"), System.Drawing.Image)
-        Me.admin.Location = New System.Drawing.Point(4, 4)
+        Me.admin.Location = New System.Drawing.Point(12, 30)
         Me.admin.Name = "admin"
         Me.admin.Size = New System.Drawing.Size(64, 63)
         Me.admin.TabIndex = 0
         Me.admin.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.Location = New System.Drawing.Point(119, 88)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(94, 58)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Laporan Penjualan"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MenuStrip1
         '
@@ -566,26 +577,6 @@ Partial Class Form1
         Me.Dashboard.Size = New System.Drawing.Size(1026, 673)
         Me.Dashboard.TabIndex = 8
         '
-        'PanelAdmin
-        '
-        Me.PanelAdmin.Controls.Add(Me.admin)
-        Me.PanelAdmin.Controls.Add(Me.Label1)
-        Me.PanelAdmin.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelAdmin.Location = New System.Drawing.Point(3, 27)
-        Me.PanelAdmin.Name = "PanelAdmin"
-        Me.PanelAdmin.Size = New System.Drawing.Size(70, 119)
-        Me.PanelAdmin.TabIndex = 8
-        '
-        'PanelBarang
-        '
-        Me.PanelBarang.Controls.Add(Me.Label3)
-        Me.PanelBarang.Controls.Add(Me.barang)
-        Me.PanelBarang.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelBarang.Location = New System.Drawing.Point(73, 27)
-        Me.PanelBarang.Name = "PanelBarang"
-        Me.PanelBarang.Size = New System.Drawing.Size(76, 119)
-        Me.PanelBarang.TabIndex = 0
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -605,12 +596,15 @@ Partial Class Form1
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.PnlMenu.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -618,10 +612,6 @@ Partial Class Form1
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.PanelAdmin.ResumeLayout(False)
-        Me.PanelAdmin.PerformLayout()
-        Me.PanelBarang.ResumeLayout(False)
-        Me.PanelBarang.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -677,6 +667,5 @@ Partial Class Form1
     Friend WithEvents PembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LaporanPembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label9 As Label
-    Friend WithEvents PanelBarang As Panel
-    Friend WithEvents PanelAdmin As Panel
+    Friend WithEvents GroupBox5 As GroupBox
 End Class
