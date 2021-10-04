@@ -3,7 +3,7 @@
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
-
+    Private FormSekarang As Form
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then
             lbuttonDown = True
@@ -24,8 +24,9 @@
             Me.Top = PointToScreen(e.Location).Y
         End If
     End Sub
-    Private Sub MenuUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Enabled = True
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Max_Click(sender As Object, e As EventArgs) Handles Max.Click
         If Me.WindowState = FormWindowState.Maximized Then
@@ -41,9 +42,9 @@
     Private Sub Min_Click(sender As Object, e As EventArgs) Handles Min.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Tgl.Text = Format(Date.Now, "dd MMM yyy")
-        Wkt.Text = Format(Date.Now, "hh:mm")
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        Tgl.Text = Format(Now, "dd MMM yyy")
+        Wkt.Text = Format(Now, "H:mm")
     End Sub
     Private Sub Menu_Click(sender As Object, e As EventArgs) Handles Menu.Click
         If PnlMenu.Visible = False Then
@@ -129,4 +130,17 @@
             Login.ShowDialog()
         End If
     End Sub
+    'Private Sub BukaFormBaru(FormBaru As Form)
+    'If FormSekarang IsNot Nothing Then
+    '      FormSekarang.Close()
+    'End If
+    '  FormSekarang = FormBaru
+    '  FormBaru.TopLevel = False
+    '  FormBaru.Dock = DockStyle.Fill
+    '  Dashboard.Controls.Add(FormBaru)
+    '  Dashboard.Tag = FormBaru
+    '  FormBaru.BringToFront()
+    '  FormBaru.Show()
+    '  Label9.Text = FormBaru.Text
+    '  End Sub
 End Class

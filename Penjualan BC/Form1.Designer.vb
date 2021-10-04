@@ -61,8 +61,8 @@ Partial Class Form1
         Me.LaporanPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LaporanPembelianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Wkt = New System.Windows.Forms.Label()
         Me.Tgl = New System.Windows.Forms.Label()
+        Me.Wkt = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Menu = New System.Windows.Forms.Button()
@@ -73,8 +73,8 @@ Partial Class Form1
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Dashboard = New System.Windows.Forms.Panel()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel6.SuspendLayout()
         Me.PnlMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -122,6 +122,8 @@ Partial Class Form1
         '
         'PnlMenu
         '
+        Me.PnlMenu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PnlMenu.BackColor = System.Drawing.Color.LightGray
         Me.PnlMenu.Controls.Add(Me.GroupBox1)
         Me.PnlMenu.Controls.Add(Me.GroupBox2)
@@ -381,13 +383,13 @@ Partial Class Form1
         'AdminToolStripMenuItem
         '
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.AdminToolStripMenuItem.Text = "Admin"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
@@ -436,33 +438,35 @@ Partial Class Form1
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.Wkt)
         Me.Panel3.Controls.Add(Me.Tgl)
+        Me.Panel3.Controls.Add(Me.Wkt)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel3.Location = New System.Drawing.Point(769, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(257, 53)
         Me.Panel3.TabIndex = 0
         '
-        'Wkt
-        '
-        Me.Wkt.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Wkt.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Wkt.Location = New System.Drawing.Point(169, 8)
-        Me.Wkt.Name = "Wkt"
-        Me.Wkt.Size = New System.Drawing.Size(78, 35)
-        Me.Wkt.TabIndex = 19
-        Me.Wkt.Text = "Waktu"
-        '
         'Tgl
         '
         Me.Tgl.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Tgl.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Tgl.Location = New System.Drawing.Point(19, 8)
+        Me.Tgl.Location = New System.Drawing.Point(111, 8)
         Me.Tgl.Name = "Tgl"
         Me.Tgl.Size = New System.Drawing.Size(142, 35)
         Me.Tgl.TabIndex = 1
         Me.Tgl.Text = "Tanggal"
+        Me.Tgl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Wkt
+        '
+        Me.Wkt.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Wkt.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Wkt.Location = New System.Drawing.Point(35, 9)
+        Me.Wkt.Name = "Wkt"
+        Me.Wkt.Size = New System.Drawing.Size(78, 35)
+        Me.Wkt.TabIndex = 19
+        Me.Wkt.Text = "Waktu"
+        Me.Wkt.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel1
         '
@@ -566,9 +570,6 @@ Partial Class Form1
         Me.Label9.Text = "Menu Utama"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Timer1
-        '
-        '
         'Dashboard
         '
         Me.Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
@@ -576,6 +577,10 @@ Partial Class Form1
         Me.Dashboard.Name = "Dashboard"
         Me.Dashboard.Size = New System.Drawing.Size(1026, 673)
         Me.Dashboard.TabIndex = 8
+        '
+        'Timer3
+        '
+        Me.Timer3.Enabled = True
         '
         'Form1
         '
@@ -592,7 +597,6 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MenuUtama"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.PnlMenu.ResumeLayout(False)
@@ -633,7 +637,6 @@ Partial Class Form1
     Friend WithEvents Max As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Timer1 As Timer
     Friend WithEvents Dashboard As Panel
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MaterToolStripMenuItem As ToolStripMenuItem
@@ -668,4 +671,5 @@ Partial Class Form1
     Friend WithEvents LaporanPembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents Timer3 As Timer
 End Class
