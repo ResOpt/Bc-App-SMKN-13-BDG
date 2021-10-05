@@ -1,7 +1,11 @@
-﻿Public Class FormBarang
+﻿Imports BarangDB
+
+Public Class FormBarang
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
+
+    Dim connect = New BarangDB
     Private Sub FormBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
         Me.WindowState = FormWindowState.Normal
@@ -53,5 +57,55 @@
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub kode_barang_TextChanged(sender As Object, e As EventArgs) Handles kode_barang.TextChanged
+
+    End Sub
+
+    Private Sub nama_barang_TextChanged(sender As Object, e As EventArgs) Handles nama_barang.TextChanged
+
+    End Sub
+
+    Private Sub harga_beli_TextChanged(sender As Object, e As EventArgs) Handles harga_beli.TextChanged
+
+    End Sub
+
+    Private Sub harga_jual_TextChanged(sender As Object, e As EventArgs) Handles harga_jual.TextChanged
+
+    End Sub
+
+    Private Sub stok_TextChanged(sender As Object, e As EventArgs) Handles stok.TextChanged
+
+    End Sub
+
+    Private Sub button_input_Click(sender As Object, e As EventArgs) Handles button_input.Click
+        If String.IsNullOrEmpty(kode_barang.Text) Or String.IsNullOrEmpty(nama_barang.Text) Or String.IsNullOrEmpty(harga_beli.Text) Then
+            MessageBox.Show("Isi barang!!")
+        Else
+            Dim insert = connect.add_item(kode_barang.Text, nama_barang.Text, Val(harga_beli.Text), Val(harga_jual.Text), Val(stok.Text))
+            If insert = Status.FailedToAddItem Then
+                MessageBox.Show("Gagal menambahkan barang!!")
+            Else
+                MessageBox.Show("Berhasil menambahkan barang " & nama_barang.Text & " dengan kode " & kode_barang.Text)
+                ClearTextBoxes(Me)
+            End If
+        End If
+    End Sub
+
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub button_hapus_Click(sender As Object, e As EventArgs) Handles button_hapus.Click
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim barang = connect.list_barang()
+        Dim table As New DataTable
+        For Each table In barang.Tables
+            DataGridView2.DataSource = table
+        Next
     End Sub
 End Class

@@ -2,6 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_LastSelectedProfileId>C:\Users\Adri\source\repos\Penjualan BC\Penjualan BC\My Project\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
+    <ShowAllFiles>true</ShowAllFiles>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="Admin.vb">

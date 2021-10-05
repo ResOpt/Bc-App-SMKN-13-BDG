@@ -25,8 +25,19 @@ Public Class BarangDB
             conn.Close()
             Return Status.FailedToAddItem
         End Try
+        conn.Close()
 
         Return Status.Success
+    End Function
+
+    Public Function list_barang()
+        conn.Open()
+        cmd = New SqlCommand("SELECT * FROM barang", conn)
+        Dim adapter As New SqlDataAdapter(cmd)
+        Dim dataset As New DataSet
+        adapter.Fill(dataset)
+        conn.Close()
+        Return dataset
     End Function
 
     Public Function get_buy_price(code As String)
