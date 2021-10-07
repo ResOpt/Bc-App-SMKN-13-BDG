@@ -32,7 +32,6 @@ Partial Class FormPenjualan
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.total_bayar = New System.Windows.Forms.Label()
-        Me.harga_jual = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.button_batal = New System.Windows.Forms.Button()
@@ -40,7 +39,6 @@ Partial Class FormPenjualan
         Me.kode_barang = New System.Windows.Forms.TextBox()
         Me.jumlah = New System.Windows.Forms.TextBox()
         Me.no_nota_jual = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -69,7 +67,6 @@ Partial Class FormPenjualan
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.total_bayar)
-        Me.GroupBox1.Controls.Add(Me.harga_jual)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Controls.Add(Me.button_batal)
@@ -77,7 +74,6 @@ Partial Class FormPenjualan
         Me.GroupBox1.Controls.Add(Me.kode_barang)
         Me.GroupBox1.Controls.Add(Me.jumlah)
         Me.GroupBox1.Controls.Add(Me.no_nota_jual)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -117,14 +113,14 @@ Partial Class FormPenjualan
         '
         'bayar
         '
-        Me.bayar.Location = New System.Drawing.Point(788, 48)
+        Me.bayar.Location = New System.Drawing.Point(788, 44)
         Me.bayar.Name = "bayar"
         Me.bayar.Size = New System.Drawing.Size(187, 31)
         Me.bayar.TabIndex = 29
         '
         'kembalian
         '
-        Me.kembalian.Location = New System.Drawing.Point(788, 85)
+        Me.kembalian.Location = New System.Drawing.Point(788, 81)
         Me.kembalian.Name = "kembalian"
         Me.kembalian.Size = New System.Drawing.Size(187, 31)
         Me.kembalian.TabIndex = 28
@@ -132,7 +128,7 @@ Partial Class FormPenjualan
         'Label9
         '
         Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label9.Location = New System.Drawing.Point(666, 85)
+        Me.Label9.Location = New System.Drawing.Point(666, 81)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(105, 31)
         Me.Label9.TabIndex = 27
@@ -142,7 +138,7 @@ Partial Class FormPenjualan
         'Label8
         '
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Location = New System.Drawing.Point(666, 48)
+        Me.Label8.Location = New System.Drawing.Point(666, 44)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(105, 31)
         Me.Label8.TabIndex = 26
@@ -158,13 +154,6 @@ Partial Class FormPenjualan
         Me.total_bayar.Size = New System.Drawing.Size(378, 94)
         Me.total_bayar.TabIndex = 23
         Me.total_bayar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'harga_jual
-        '
-        Me.harga_jual.Location = New System.Drawing.Point(478, 46)
-        Me.harga_jual.Name = "harga_jual"
-        Me.harga_jual.Size = New System.Drawing.Size(172, 31)
-        Me.harga_jual.TabIndex = 22
         '
         'Label5
         '
@@ -214,7 +203,7 @@ Partial Class FormPenjualan
         '
         'jumlah
         '
-        Me.jumlah.Location = New System.Drawing.Point(479, 85)
+        Me.jumlah.Location = New System.Drawing.Point(478, 50)
         Me.jumlah.Name = "jumlah"
         Me.jumlah.Size = New System.Drawing.Size(171, 31)
         Me.jumlah.TabIndex = 11
@@ -226,20 +215,10 @@ Partial Class FormPenjualan
         Me.no_nota_jual.Size = New System.Drawing.Size(175, 31)
         Me.no_nota_jual.TabIndex = 10
         '
-        'Label4
-        '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(357, 46)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(105, 31)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Harga"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label3
         '
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(357, 83)
+        Me.Label3.Location = New System.Drawing.Point(356, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(105, 31)
         Me.Label3.TabIndex = 8
@@ -388,7 +367,6 @@ Partial Class FormPenjualan
     Friend WithEvents kode_barang As TextBox
     Friend WithEvents jumlah As TextBox
     Friend WithEvents no_nota_jual As TextBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
@@ -406,7 +384,6 @@ Partial Class FormPenjualan
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents total_bayar As Label
-    Friend WithEvents harga_jual As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents button_hapus As Button
     Friend WithEvents button_edit As Button

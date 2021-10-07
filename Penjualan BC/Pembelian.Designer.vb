@@ -32,7 +32,6 @@ Partial Class FormPembelian
         Me.Cls = New System.Windows.Forms.Button()
         Me.Max = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.harga_beli = New System.Windows.Forms.TextBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -40,7 +39,6 @@ Partial Class FormPembelian
         Me.kode_barang = New System.Windows.Forms.TextBox()
         Me.jumlah = New System.Windows.Forms.TextBox()
         Me.no_nota_beli = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -70,7 +68,7 @@ Partial Class FormPembelian
         '
         'bayar
         '
-        Me.bayar.Location = New System.Drawing.Point(800, 46)
+        Me.bayar.Location = New System.Drawing.Point(800, 44)
         Me.bayar.Name = "bayar"
         Me.bayar.Size = New System.Drawing.Size(178, 31)
         Me.bayar.TabIndex = 29
@@ -95,9 +93,9 @@ Partial Class FormPembelian
         'Label8
         '
         Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label8.Location = New System.Drawing.Point(680, 48)
+        Me.Label8.Location = New System.Drawing.Point(680, 46)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(105, 31)
+        Me.Label8.Size = New System.Drawing.Size(111, 31)
         Me.Label8.TabIndex = 26
         Me.Label8.Text = "Bayar"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -145,13 +143,6 @@ Partial Class FormPembelian
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(145, 61)
         Me.Panel5.TabIndex = 3
-        '
-        'harga_beli
-        '
-        Me.harga_beli.Location = New System.Drawing.Point(474, 46)
-        Me.harga_beli.Name = "harga_beli"
-        Me.harga_beli.Size = New System.Drawing.Size(172, 31)
-        Me.harga_beli.TabIndex = 22
         '
         'DataGridView2
         '
@@ -204,7 +195,7 @@ Partial Class FormPembelian
         '
         'jumlah
         '
-        Me.jumlah.Location = New System.Drawing.Point(474, 83)
+        Me.jumlah.Location = New System.Drawing.Point(483, 44)
         Me.jumlah.Name = "jumlah"
         Me.jumlah.Size = New System.Drawing.Size(172, 31)
         Me.jumlah.TabIndex = 11
@@ -215,16 +206,6 @@ Partial Class FormPembelian
         Me.no_nota_beli.Name = "no_nota_beli"
         Me.no_nota_beli.Size = New System.Drawing.Size(175, 31)
         Me.no_nota_beli.TabIndex = 10
-        '
-        'Label4
-        '
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(353, 46)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(105, 31)
-        Me.Label4.TabIndex = 9
-        Me.Label4.Text = "Harga"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
         '
@@ -256,7 +237,7 @@ Partial Class FormPembelian
         'Label3
         '
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(353, 83)
+        Me.Label3.Location = New System.Drawing.Point(362, 44)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(105, 31)
         Me.Label3.TabIndex = 8
@@ -276,12 +257,10 @@ Partial Class FormPembelian
         Me.GroupBox1.Controls.Add(Me.kembalian)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.harga_beli)
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Controls.Add(Me.kode_barang)
         Me.GroupBox1.Controls.Add(Me.jumlah)
         Me.GroupBox1.Controls.Add(Me.no_nota_beli)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -390,14 +369,12 @@ Partial Class FormPembelian
     Friend WithEvents Cls As Button
     Friend WithEvents Max As Button
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents harga_beli As TextBox
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents kode_barang As TextBox
     Friend WithEvents jumlah As TextBox
     Friend WithEvents no_nota_beli As TextBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel4 As Panel

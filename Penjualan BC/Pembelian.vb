@@ -48,7 +48,7 @@
             e.Handled = True
         End If
     End Sub
-    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles harga_beli.KeyPress
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs)
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If
@@ -77,4 +77,9 @@
     Private Sub button_simpan_Click(sender As Object, e As EventArgs) Handles button_simpan.Click
         MessageBox.Show("Apakah Ingin Cetak Nota ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
     End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
 End Class
