@@ -18,13 +18,13 @@ CREATE TABLE barang(
 )
 
 CREATE TABLE pembelian(
-	no_nota_beli varchar(50) PRIMARY KEY NOT NULL,
-	tanggal_beli timestamp NOT NULL,
-	total_beli INT NOT NULL,
+	no_nota_beli varchar(50) NOT NULL,
+	tanggal_beli DATETIME NOT NULL,
 	user_id varchar(30) NOT NULL,
 	harga_beli INT NOT NULL,
 	jumlah INT NOT NULL,
 	kode_barang varchar(10) NOT NULL,
+	subtotal INT NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES pengguna(user_id),
 	FOREIGN KEY (kode_barang) REFERENCES barang(kode_barang),
 )
@@ -39,6 +39,11 @@ CREATE TABLE penjualan(
 	kode_barang varchar(10) NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES pengguna(user_id),
 	FOREIGN KEY (kode_barang) REFERENCES barang(kode_barang),
+)
+
+CREATE TABLE pembelian_total(
+	nota_pembelian varchar(50) NOT NULL,
+	total INT NOT NULL,
 )
 
 CREATE TABLE log(

@@ -6,6 +6,7 @@
         PasswordDoesNotMatch
         FailedToDeleteUser
         FailedToAddItem
+        FailedToAddPurchase
         Success
     End Enum
 

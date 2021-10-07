@@ -2,6 +2,8 @@
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
+
+    Dim connect = New PembelianDB
     Private Sub FormPembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
         Me.WindowState = FormWindowState.Normal
@@ -82,4 +84,40 @@
 
     End Sub
 
+    Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
+
+    End Sub
+
+    Private Sub no_nota_beli_TextChanged(sender As Object, e As EventArgs) Handles no_nota_beli.TextChanged
+
+    End Sub
+
+    Private Sub kode_barang_TextChanged(sender As Object, e As EventArgs) Handles kode_barang.TextChanged
+
+    End Sub
+
+    Private Sub jumlah_TextChanged(sender As Object, e As EventArgs) Handles jumlah.TextChanged
+
+    End Sub
+
+    Private Sub bayar_TextChanged(sender As Object, e As EventArgs) Handles bayar.TextChanged
+
+    End Sub
+
+    Private Sub kembalian_TextChanged(sender As Object, e As EventArgs) Handles kembalian.TextChanged
+
+    End Sub
+
+    Private Sub total_beli_Click(sender As Object, e As EventArgs) Handles total_beli.Click
+
+    End Sub
+
+    Private Sub button_input_Click(sender As Object, e As EventArgs) Handles button_input.Click
+        Dim p = connect.purchase(no_nota_beli.Text, DateTime.Now(), user, Val(jumlah.Text), kode_barang.Text)
+        If p = Status.Success Then
+            MessageBox.Show("Sukses menambah pembelian!!")
+        Else
+            MessageBox.Show("Gagal menambah pembelian!!")
+        End If
+    End Sub
 End Class
