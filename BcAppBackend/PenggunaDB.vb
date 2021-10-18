@@ -3,6 +3,7 @@ Imports System.Security.Cryptography
 Imports System.Text
 Imports System.Linq
 Public Class PenggunaDB
+    Inherits BaseConnection
     Public Function register(user_id As String, password As String, confirm_password As String, username As String, status As String)
         'Fungsi untuk mendaftarkan pengguna
 
@@ -52,7 +53,6 @@ Public Class PenggunaDB
         If table.Rows.Count() <= 0 Then
             Return Status.LoginFailed
         Else
-            logged_in = True
             user = user_id
             Return Status.Success
         End If

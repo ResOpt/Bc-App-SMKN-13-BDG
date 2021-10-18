@@ -113,7 +113,7 @@
     End Sub
 
     Private Sub button_input_Click(sender As Object, e As EventArgs) Handles button_input.Click
-        Dim p = connect.purchase(no_nota_beli.Text, DateTime.Now(), user, Val(jumlah.Text), kode_barang.Text)
+        Dim p = connect.purchase(no_nota_beli.Text, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), user, Val(jumlah.Text), kode_barang.Text)
         If p = Status.Success Then
             MessageBox.Show("Sukses menambah pembelian!!")
         Else

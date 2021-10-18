@@ -46,7 +46,12 @@ CREATE TABLE pembelian_total(
 	total INT NOT NULL,
 )
 
+CREATE TABLE penjualan_total(
+	nota_penjualan varchar(50) NOT NULL,
+	total INT NOT NULL,
+)
+
 CREATE TABLE log(
 	user_id varchar(30) NOT NULL,
-	PRIMARY KEY (user_id) REFERENCES pengguna(user_id)
+	FOREIGN KEY (user_id) REFERENCES pengguna(user_id)
 )

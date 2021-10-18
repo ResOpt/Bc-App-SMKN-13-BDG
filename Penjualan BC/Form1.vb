@@ -3,6 +3,7 @@
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
+    Dim conn = New PenggunaDB
     Private FormSekarang As Form
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then

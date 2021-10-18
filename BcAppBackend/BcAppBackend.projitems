@@ -11,7 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)PenggunaDB.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)BarangDB.vb" />
-    <Compile Include="$(MSBuildThisFileDirectory)DbConnection.vb" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseClasses.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)Enums.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)PembelianDB.vb" />
     <Compile Include="$(MSBuildThisFileDirectory)PenjualanDB.vb" />

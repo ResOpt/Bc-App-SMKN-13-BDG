@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class BarangDB
+    Inherits BaseConnection
     Public Function add_item(code As String, name As String, buy_price As Integer, sell_price As Integer, stock As Integer)
         'Fungsi untuk menambah barang
 
@@ -17,31 +18,31 @@ Public Class BarangDB
         '@return Enum
         '   Mengembalikan Enum yang cocok dengan kondisi
 
-        conn.Open()
+        open_connection()
         cmd = New SqlCommand("INSERT INTO barang(kode_barang, nama_barang, harga_beli, harga_jual, stok) VALUES ('" & code & "','" & name & "'," & buy_price & "," & sell_price & "," & stock & ")", conn)
         Try
             cmd.ExecuteNonQuery()
         Catch ex As Exception
-            conn.Close()
+            close_connection()
             Return Status.FailedToAddItem
         End Try
-        conn.Close()
+        close_connection()
 
         Return Status.Success
     End Function
 
     Public Function list_barang()
-        conn.Open()
+        open_connection()
         cmd = New SqlCommand("SELECT * FROM barang", conn)
         Dim adapter As New SqlDataAdapter(cmd)
         Dim dataset As New DataSet
         adapter.Fill(dataset)
-        conn.Close()
+        close_connection()
         Return dataset
     End Function
 
     Public Function get_buy_price(code As String)
-        conn.Open()
+        open_connection()
         cmd = New SqlCommand("SELECT harga_beli FROM barang WHERE kode_barang = @code", conn)
         cmd.Parameters.Add("@user_id", SqlDbType.VarChar).Value = code.ToLower()
         Dim str = ""
@@ -49,7 +50,7 @@ Public Class BarangDB
         While reader.Read
             str = reader.GetInt32(0).ToString()
         End While
-        conn.Close()
+        close_connection()
         Return str
     End Function
 
