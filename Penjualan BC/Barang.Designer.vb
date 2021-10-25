@@ -24,6 +24,7 @@ Partial Class FormBarang
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormBarang))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.harga_jual = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.stok = New System.Windows.Forms.TextBox()
@@ -48,7 +49,6 @@ Partial Class FormBarang
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
@@ -81,6 +81,16 @@ Partial Class FormBarang
         Me.GroupBox1.TabIndex = 24
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Barang"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(165, 355)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(78, 20)
+        Me.Button1.TabIndex = 25
+        Me.Button1.Text = "Tampilkan"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'harga_jual
         '
@@ -325,16 +335,6 @@ Partial Class FormBarang
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "Form Barang"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(165, 355)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(78, 20)
-        Me.Button1.TabIndex = 25
-        Me.Button1.Text = "Tampilkan"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'FormBarang
         '

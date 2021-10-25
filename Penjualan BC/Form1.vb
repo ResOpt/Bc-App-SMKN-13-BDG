@@ -80,7 +80,8 @@
     End Sub
 
     Private Sub Barang_Click(sender As Object, e As EventArgs) Handles barang.Click
-        FormBarang.ShowDialog()
+        FormBarang.Show()
+        FormBarang.Button1.PerformClick()
     End Sub
     Private Sub BarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem.Click
         FormBarang.ShowDialog()

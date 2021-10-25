@@ -2,6 +2,11 @@
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
+
+    Dim connect = New PenjualanDB
+    Dim table = connect.create_table()
+    Dim id = 1
+
     Private Sub FormPenjualan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
         Me.WindowState = FormWindowState.Normal
@@ -41,7 +46,20 @@
     End Sub
 
     Private Sub ButtonInput_Click(sender As Object, e As EventArgs) Handles button_simpan.Click
-        MessageBox.Show("Apakah Ingin Cetak Nota ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim res = MessageBox.Show("Apakah Ingin Cetak Nota ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If res = System.Windows.Forms.DialogResult.Yes Then
+            connect.bulk_copy(table)
+            MessageBox.Show("Pembelian sukses disimpan")
+            connect.clear_datatable(table)
+            connect.add_to_total_tbl(no_nota_jual.Text, Val(total_bayar.Text), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"))
+            id = 1
+        Else
+            connect.bulk_copy(table)
+            MessageBox.Show("Pembelian sukses disimpan")
+            connect.clear_datatable(table)
+            connect.add_to_total_tbl(no_nota_jual.Text, Val(total_bayar.Text), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"))
+            id = 1
+        End If
     End Sub
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles no_nota_jual.KeyPress
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
@@ -72,5 +90,46 @@
         If Not ((e.KeyChar >= "0" And e.KeyChar <= "9") Or e.KeyChar = vbBack) Then
             e.Handled = True
         End If
+    End Sub
+
+    Private Sub no_nota_jual_TextChanged(sender As Object, e As EventArgs) Handles no_nota_jual.TextChanged
+
+    End Sub
+
+    Private Sub kode_barang_TextChanged(sender As Object, e As EventArgs) Handles kode_barang.TextChanged
+
+    End Sub
+
+    Private Sub jumlah_TextChanged(sender As Object, e As EventArgs) Handles jumlah.TextChanged
+
+    End Sub
+
+    Private Sub button_input_Click(sender As Object, e As EventArgs) Handles button_input.Click
+        Dim add = connect.add_to_data_table(table, no_nota_jual.Text, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), user, Val(jumlah.Text), kode_barang.Text, id)
+        If add = Status.FailedToAddPurchase Then
+            id = 1
+            MessageBox.Show("Gagal menambah penjualan!! Ceklah stok barang!!")
+        ElseIf add = Status.AlreadyExist Then
+            MessageBox.Show("Barang sudah ada!! Harap mengedit saja!")
+        ElseIf add = Status.DataDoesNotExist Then
+            MessageBox.Show("Barang tidak ada!!")
+        Else
+            id += 1
+            Dim sum = 0
+            Dim x As DataRow
+            For Each x In table.Rows
+                sum += Val(x.Item("subtotal"))
+            Next x
+            total_bayar.Text = sum
+            MessageBox.Show("Penjualan berhasil ditambahkan")
+        End If
+    End Sub
+
+    Private Sub total_bayar_Click(sender As Object, e As EventArgs) Handles total_bayar.Click
+
+    End Sub
+
+    Private Sub btn_tampilkan_Click(sender As Object, e As EventArgs) Handles btn_tampilkan.Click
+        DataGridView2.DataSource = table
     End Sub
 End Class

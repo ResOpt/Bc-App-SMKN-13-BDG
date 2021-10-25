@@ -45,7 +45,7 @@ Partial Class FormPembelian
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.button_hapus = New System.Windows.Forms.Button()
-        Me.button_edit = New System.Windows.Forms.Button()
+        Me.button_show = New System.Windows.Forms.Button()
         Me.button_input = New System.Windows.Forms.Button()
         Me.total_beli = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -62,7 +62,7 @@ Partial Class FormPembelian
         Me.Panel3.BackColor = System.Drawing.Color.Gray
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel3.Location = New System.Drawing.Point(731, 37)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(7, 355)
         Me.Panel3.TabIndex = 32
@@ -70,7 +70,7 @@ Partial Class FormPembelian
         'bayar
         '
         Me.bayar.Location = New System.Drawing.Point(560, 26)
-        Me.bayar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bayar.Margin = New System.Windows.Forms.Padding(2)
         Me.bayar.Name = "bayar"
         Me.bayar.Size = New System.Drawing.Size(126, 23)
         Me.bayar.TabIndex = 29
@@ -78,7 +78,7 @@ Partial Class FormPembelian
         'kembalian
         '
         Me.kembalian.Location = New System.Drawing.Point(560, 50)
-        Me.kembalian.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.kembalian.Margin = New System.Windows.Forms.Padding(2)
         Me.kembalian.Name = "kembalian"
         Me.kembalian.Size = New System.Drawing.Size(126, 23)
         Me.kembalian.TabIndex = 28
@@ -111,7 +111,7 @@ Partial Class FormPembelian
         Me.Min.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Min.Image = CType(resources.GetObject("Min.Image"), System.Drawing.Image)
         Me.Min.Location = New System.Drawing.Point(6, 6)
-        Me.Min.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Min.Margin = New System.Windows.Forms.Padding(2)
         Me.Min.Name = "Min"
         Me.Min.Size = New System.Drawing.Size(29, 27)
         Me.Min.TabIndex = 2
@@ -123,7 +123,7 @@ Partial Class FormPembelian
         Me.Cls.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Cls.Image = Global.Penjualan_BC.My.Resources.Resources.close
         Me.Cls.Location = New System.Drawing.Point(72, 5)
-        Me.Cls.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Cls.Margin = New System.Windows.Forms.Padding(2)
         Me.Cls.Name = "Cls"
         Me.Cls.Size = New System.Drawing.Size(27, 28)
         Me.Cls.TabIndex = 0
@@ -135,7 +135,7 @@ Partial Class FormPembelian
         Me.Max.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Max.Image = CType(resources.GetObject("Max.Image"), System.Drawing.Image)
         Me.Max.Location = New System.Drawing.Point(39, 6)
-        Me.Max.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Max.Margin = New System.Windows.Forms.Padding(2)
         Me.Max.Name = "Max"
         Me.Max.Size = New System.Drawing.Size(29, 27)
         Me.Max.TabIndex = 1
@@ -148,7 +148,7 @@ Partial Class FormPembelian
         Me.Panel5.Controls.Add(Me.Max)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel5.Location = New System.Drawing.Point(636, 0)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel5.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(102, 37)
         Me.Panel5.TabIndex = 3
@@ -157,7 +157,7 @@ Partial Class FormPembelian
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(10, 82)
-        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 62
         Me.DataGridView2.RowTemplate.Height = 33
@@ -169,7 +169,7 @@ Partial Class FormPembelian
         Me.Panel1.BackColor = System.Drawing.Color.Gray
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 37)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(7, 355)
         Me.Panel1.TabIndex = 31
@@ -181,7 +181,7 @@ Partial Class FormPembelian
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(738, 37)
         Me.Panel2.TabIndex = 30
@@ -202,7 +202,7 @@ Partial Class FormPembelian
         'kode_barang
         '
         Me.kode_barang.Location = New System.Drawing.Point(114, 50)
-        Me.kode_barang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.kode_barang.Margin = New System.Windows.Forms.Padding(2)
         Me.kode_barang.Name = "kode_barang"
         Me.kode_barang.Size = New System.Drawing.Size(124, 23)
         Me.kode_barang.TabIndex = 13
@@ -210,7 +210,7 @@ Partial Class FormPembelian
         'jumlah
         '
         Me.jumlah.Location = New System.Drawing.Point(338, 26)
-        Me.jumlah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.jumlah.Margin = New System.Windows.Forms.Padding(2)
         Me.jumlah.Name = "jumlah"
         Me.jumlah.Size = New System.Drawing.Size(122, 23)
         Me.jumlah.TabIndex = 11
@@ -218,7 +218,7 @@ Partial Class FormPembelian
         'no_nota_beli
         '
         Me.no_nota_beli.Location = New System.Drawing.Point(114, 28)
-        Me.no_nota_beli.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.no_nota_beli.Margin = New System.Windows.Forms.Padding(2)
         Me.no_nota_beli.Name = "no_nota_beli"
         Me.no_nota_beli.Size = New System.Drawing.Size(124, 23)
         Me.no_nota_beli.TabIndex = 10
@@ -248,7 +248,7 @@ Partial Class FormPembelian
         Me.Panel4.BackColor = System.Drawing.Color.Gray
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel4.Location = New System.Drawing.Point(0, 392)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(738, 6)
         Me.Panel4.TabIndex = 33
@@ -267,7 +267,7 @@ Partial Class FormPembelian
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.button_hapus)
-        Me.GroupBox1.Controls.Add(Me.button_edit)
+        Me.GroupBox1.Controls.Add(Me.button_show)
         Me.GroupBox1.Controls.Add(Me.button_input)
         Me.GroupBox1.Controls.Add(Me.total_beli)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -285,9 +285,9 @@ Partial Class FormPembelian
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(22, 53)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(695, 331)
         Me.GroupBox1.TabIndex = 29
         Me.GroupBox1.TabStop = False
@@ -296,27 +296,27 @@ Partial Class FormPembelian
         'button_hapus
         '
         Me.button_hapus.Location = New System.Drawing.Point(199, 262)
-        Me.button_hapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_hapus.Margin = New System.Windows.Forms.Padding(2)
         Me.button_hapus.Name = "button_hapus"
         Me.button_hapus.Size = New System.Drawing.Size(77, 22)
         Me.button_hapus.TabIndex = 43
         Me.button_hapus.Text = "Hapus"
         Me.button_hapus.UseVisualStyleBackColor = True
         '
-        'button_edit
+        'button_show
         '
-        Me.button_edit.Location = New System.Drawing.Point(104, 262)
-        Me.button_edit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.button_edit.Name = "button_edit"
-        Me.button_edit.Size = New System.Drawing.Size(77, 22)
-        Me.button_edit.TabIndex = 42
-        Me.button_edit.Text = "Edit"
-        Me.button_edit.UseVisualStyleBackColor = True
+        Me.button_show.Location = New System.Drawing.Point(104, 262)
+        Me.button_show.Margin = New System.Windows.Forms.Padding(2)
+        Me.button_show.Name = "button_show"
+        Me.button_show.Size = New System.Drawing.Size(77, 22)
+        Me.button_show.TabIndex = 42
+        Me.button_show.Text = "Show"
+        Me.button_show.UseVisualStyleBackColor = True
         '
         'button_input
         '
         Me.button_input.Location = New System.Drawing.Point(15, 262)
-        Me.button_input.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_input.Margin = New System.Windows.Forms.Padding(2)
         Me.button_input.Name = "button_input"
         Me.button_input.Size = New System.Drawing.Size(77, 22)
         Me.button_input.TabIndex = 41
@@ -349,7 +349,7 @@ Partial Class FormPembelian
         'button_batal
         '
         Me.button_batal.Location = New System.Drawing.Point(160, 297)
-        Me.button_batal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_batal.Margin = New System.Windows.Forms.Padding(2)
         Me.button_batal.Name = "button_batal"
         Me.button_batal.Size = New System.Drawing.Size(116, 21)
         Me.button_batal.TabIndex = 38
@@ -359,7 +359,7 @@ Partial Class FormPembelian
         'button_simpan
         '
         Me.button_simpan.Location = New System.Drawing.Point(15, 297)
-        Me.button_simpan.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.button_simpan.Margin = New System.Windows.Forms.Padding(2)
         Me.button_simpan.Name = "button_simpan"
         Me.button_simpan.Size = New System.Drawing.Size(117, 21)
         Me.button_simpan.TabIndex = 37
@@ -377,7 +377,7 @@ Partial Class FormPembelian
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormPembelian"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Pembelian"
@@ -411,7 +411,7 @@ Partial Class FormPembelian
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents button_hapus As Button
-    Friend WithEvents button_edit As Button
+    Friend WithEvents button_show As Button
     Friend WithEvents button_input As Button
     Friend WithEvents total_beli As Label
     Friend WithEvents Label5 As Label

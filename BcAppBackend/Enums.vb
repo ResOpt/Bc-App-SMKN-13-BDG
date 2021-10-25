@@ -7,6 +7,8 @@
         FailedToDeleteUser
         FailedToAddItem
         FailedToAddPurchase
+        AlreadyExist
+        DataDoesNotExist
         Success
     End Enum
 

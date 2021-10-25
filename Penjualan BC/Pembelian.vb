@@ -1,9 +1,14 @@
-﻿Public Class FormPembelian
+﻿Imports System.Data.SqlClient
+
+Public Class FormPembelian
     Dim firstX As Integer
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
 
+    Dim id = 1
     Dim connect = New PembelianDB
+    Dim table = connect.create_table()
+
     Private Sub FormPembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
         Me.WindowState = FormWindowState.Normal
@@ -77,7 +82,21 @@
     End Sub
 
     Private Sub button_simpan_Click(sender As Object, e As EventArgs) Handles button_simpan.Click
-        MessageBox.Show("Apakah Ingin Cetak Nota ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim res = MessageBox.Show("Apakah Ingin Cetak Nota ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If res = System.Windows.Forms.DialogResult.Yes Then
+            connect.bulk_copy(table)
+            MessageBox.Show("Pembelian sukses disimpan")
+            connect.clear_datatable(table)
+            connect.add_to_total_tbl(no_nota_beli.Text, Val(total_beli.Text), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"))
+            id = 1
+        Else
+            connect.bulk_copy(table)
+            MessageBox.Show("Pembelian sukses disimpan")
+            connect.clear_datatable(table)
+            connect.add_to_total_tbl(no_nota_beli.Text, Val(total_beli.Text), DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"))
+            id = 1
+        End If
+
     End Sub
 
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
@@ -113,11 +132,33 @@
     End Sub
 
     Private Sub button_input_Click(sender As Object, e As EventArgs) Handles button_input.Click
-        Dim p = connect.purchase(no_nota_beli.Text, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), user, Val(jumlah.Text), kode_barang.Text)
-        If p = Status.Success Then
-            MessageBox.Show("Sukses menambah pembelian!!")
+        Dim add = connect.add_to_data_table(table, no_nota_beli.Text, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), user, Val(jumlah.Text), kode_barang.Text, id)
+        If add = Status.FailedToAddPurchase Then
+            id = 1
+            MessageBox.Show("Gagal menambah pembelian!! Ceklah stok barang!!")
+        ElseIf add = Status.AlreadyExist Then
+            MessageBox.Show("Barang sudah ada! Harap mengedit saja")
         Else
-            MessageBox.Show("Gagal menambah pembelian!!")
+            id += 1
+            Dim sum = 0
+            Dim x As DataRow
+            For Each x In table.Rows
+                sum += Val(x.Item("subtotal"))
+            Next x
+            total_beli.Text = sum
+            MessageBox.Show("Pembelian berhasil ditambahkan")
         End If
+    End Sub
+
+    Private Sub button_show_Click(sender As Object, e As EventArgs) Handles button_show.Click
+        DataGridView2.DataSource = table
+    End Sub
+
+    Private Sub button_batal_Click(sender As Object, e As EventArgs) Handles button_batal.Click
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

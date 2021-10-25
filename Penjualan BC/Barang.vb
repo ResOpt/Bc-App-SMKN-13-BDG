@@ -94,7 +94,11 @@ Public Class FormBarang
     End Sub
 
     Private Sub DataGridView2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView2.CellContentClick
-
+        Dim barang = connect.list_barang()
+        Dim table As New DataTable
+        For Each table In barang.Tables
+            DataGridView2.DataSource = table
+        Next
     End Sub
 
     Private Sub button_hapus_Click(sender As Object, e As EventArgs) Handles button_hapus.Click
@@ -107,5 +111,16 @@ Public Class FormBarang
         For Each table In barang.Tables
             DataGridView2.DataSource = table
         Next
+    End Sub
+
+    Private Sub button_edit_Click(sender As Object, e As EventArgs) Handles button_edit.Click
+        Dim table = connect.create_hashtable(kode_barang.Text, nama_barang.Text, harga_beli.Text, harga_jual.Text, stok.Text)
+        Dim update = connect.update_item(table)
+        If update = Status.FailedToAddItem Then
+            MessageBox.Show("Gagal mengedit barang!! Cek apakah kode barang valid")
+        Else
+            MessageBox.Show("Sukses!!")
+            Me.Button1.PerformClick()
+        End If
     End Sub
 End Class

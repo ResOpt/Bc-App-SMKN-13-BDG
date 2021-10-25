@@ -92,9 +92,9 @@ Public Class PembelianDB
 		Return Int
 	End Function
 
-	Public Function add_to_total_tbl(note, total)
+	Public Function add_to_total_tbl(note, total, time)
 		open_connection()
-		cmd = New SqlCommand(String.Format("INSERT INTO pembelian_total(nota_pembelian, total) VALUES ({0}, {1})", note, total), conn)
+		cmd = New SqlCommand(String.Format("INSERT INTO pembelian_total(nota_pembelian, total, waktu_pembelian) VALUES ({0}, {1}, {2})", note, total, time), conn)
 		Try
 			cmd.ExecuteNonQuery()
 		Catch ex As Exception
@@ -124,6 +124,8 @@ Public Class PembelianDB
 		column6.DataType = System.Type.GetType("System.String")
 		Dim column7 As DataColumn = New DataColumn("subtotal")
 		column7.DataType = System.Type.GetType("System.Int32")
+		Dim column8 As DataColumn = New DataColumn("id")
+		column8.DataType = System.Type.GetType("System.Int32")
 
 
 		Table1.Columns.Add(column1)
@@ -133,29 +135,63 @@ Public Class PembelianDB
 		Table1.Columns.Add(column5)
 		Table1.Columns.Add(column6)
 		Table1.Columns.Add(column7)
+		Table1.Columns.Add(column8)
 
 		Return Table1
 
 	End Function
 
-	Public Sub add_to_data_table(table As DataTable,
+	Public Function add_to_data_table(table As DataTable,
 									  note As String,
 						 purchase_date As DateTime,
 						 user_id As String,
 						 amount As Integer,
-						 item_code As String)
+						 item_code As String,
+									  id As Integer)
 
 		Dim Row1 As DataRow
 		Row1 = table.NewRow()
+		open_connection()
+		Dim price = New SqlCommand("SELECT harga_beli FROM barang WHERE kode_barang = " & item_code, conn)
+		Dim stock = New SqlCommand("SELECT stok FROM barang WHERE kode_barang = " & item_code, conn)
+		Dim read As Integer
+		Dim read_stock As Integer
+		Try
+			read = price.ExecuteScalar()
+			read_stock = stock.ExecuteScalar()
+		Catch ex As Exception
+			close_connection()
+			Return Status.FailedToAddPurchase
+		End Try
 
 		Row1.Item("no_nota_beli") = note
-		Row1.Item("tanggal_beli") = purchase_date
-		Row1.Item("user_id") = user_id
-		Row1.Item("jumlah") = amount
-		Row1.Item("kode_barang") = item_code
-		Row1.Item("total") = get_total_price(item_code, amount).Item2
+			Row1.Item("tanggal_beli") = purchase_date
+			Row1.Item("user_id") = user_id
+			Row1.Item("jumlah") = amount
+			Row1.Item("harga_beli") = read
+			Row1.Item("kode_barang") = item_code
+			Row1.Item("subtotal") = get_total_price(item_code, amount).Item2
+			Row1.Item("id") = id
+			close_connection()
+			open_connection()
+			cmd = New SqlCommand(String.Format("UPDATE barang SET stok = {0} WHERE kode_barang = {1}", read_stock + amount, item_code), conn)
+			cmd.ExecuteNonQuery()
+			close_connection()
+			table.Rows.Add(Row1)
+			Return Status.Success
 
-		table.Rows.Add(Row1)
+	End Function
 
+	Public Sub clear_datatable(table As DataTable)
+		table.Clear()
 	End Sub
+
+	Public Sub bulk_copy(table As DataTable)
+		open_connection()
+		Dim cp = New SqlBulkCopy(conn)
+		cp.DestinationTableName = "pembelian"
+		cp.WriteToServer(table)
+		close_connection()
+	End Sub
+
 End Class
