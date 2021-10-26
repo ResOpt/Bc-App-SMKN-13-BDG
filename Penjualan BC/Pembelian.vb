@@ -10,8 +10,8 @@ Public Class FormPembelian
     Dim table = connect.create_table()
 
     Private Sub FormPembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
-        Me.WindowState = FormWindowState.Normal
+        ' Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then
@@ -152,6 +152,7 @@ Public Class FormPembelian
 
     Private Sub button_show_Click(sender As Object, e As EventArgs) Handles button_show.Click
         DataGridView2.DataSource = table
+        DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
     End Sub
 
     Private Sub button_batal_Click(sender As Object, e As EventArgs) Handles button_batal.Click
@@ -159,6 +160,10 @@ Public Class FormPembelian
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
 
     End Sub
 End Class

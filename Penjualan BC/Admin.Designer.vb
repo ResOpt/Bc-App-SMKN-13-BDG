@@ -48,6 +48,7 @@ Partial Class FormAdmin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.konfirmasi = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +64,7 @@ Partial Class FormAdmin
         Me.Panel2.Controls.Add(Me.Panel5)
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(656, 62)
+        Me.Panel2.Size = New System.Drawing.Size(1026, 62)
         Me.Panel2.TabIndex = 6
         '
         'Label6
@@ -84,7 +85,7 @@ Partial Class FormAdmin
         Me.Panel5.Controls.Add(Me.Cls)
         Me.Panel5.Controls.Add(Me.Max)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(510, 0)
+        Me.Panel5.Location = New System.Drawing.Point(880, 0)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(146, 62)
         Me.Panel5.TabIndex = 3
@@ -124,9 +125,10 @@ Partial Class FormAdmin
         '
         'Label1
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label1.Location = New System.Drawing.Point(19, 47)
+        Me.Label1.Location = New System.Drawing.Point(19, 62)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(156, 32)
         Me.Label1.TabIndex = 4
@@ -134,9 +136,10 @@ Partial Class FormAdmin
         '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label2.Location = New System.Drawing.Point(19, 83)
+        Me.Label2.Location = New System.Drawing.Point(19, 105)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 32)
         Me.Label2.TabIndex = 7
@@ -144,9 +147,10 @@ Partial Class FormAdmin
         '
         'Label3
         '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label3.Location = New System.Drawing.Point(19, 120)
+        Me.Label3.Location = New System.Drawing.Point(19, 150)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(156, 32)
         Me.Label3.TabIndex = 8
@@ -154,88 +158,89 @@ Partial Class FormAdmin
         '
         'Label4
         '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label4.Location = New System.Drawing.Point(20, 194)
+        Me.Label4.Location = New System.Drawing.Point(20, 244)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(156, 32)
+        Me.Label4.Size = New System.Drawing.Size(155, 32)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Level"
         '
         'user_id
         '
-        Me.user_id.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.user_id.Location = New System.Drawing.Point(181, 47)
+        Me.user_id.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.user_id.Location = New System.Drawing.Point(181, 62)
         Me.user_id.Name = "user_id"
-        Me.user_id.Size = New System.Drawing.Size(215, 31)
+        Me.user_id.Size = New System.Drawing.Size(585, 32)
         Me.user_id.TabIndex = 10
         '
         'password
         '
-        Me.password.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.password.Location = New System.Drawing.Point(181, 120)
+        Me.password.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.password.Location = New System.Drawing.Point(181, 150)
         Me.password.Name = "password"
-        Me.password.Size = New System.Drawing.Size(391, 31)
+        Me.password.Size = New System.Drawing.Size(761, 32)
         Me.password.TabIndex = 11
         '
         'nama_admin
         '
-        Me.nama_admin.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.nama_admin.Location = New System.Drawing.Point(181, 83)
+        Me.nama_admin.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.nama_admin.Location = New System.Drawing.Point(181, 105)
         Me.nama_admin.Name = "nama_admin"
-        Me.nama_admin.Size = New System.Drawing.Size(391, 31)
+        Me.nama_admin.Size = New System.Drawing.Size(761, 32)
         Me.nama_admin.TabIndex = 13
         '
         'level
         '
-        Me.level.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.level.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.level.FormattingEnabled = True
         Me.level.Items.AddRange(New Object() {"User", "Admin"})
-        Me.level.Location = New System.Drawing.Point(182, 194)
+        Me.level.Location = New System.Drawing.Point(182, 244)
         Me.level.Name = "level"
-        Me.level.Size = New System.Drawing.Size(215, 33)
+        Me.level.Size = New System.Drawing.Size(585, 34)
         Me.level.TabIndex = 14
         '
         'ButtonInput
         '
-        Me.ButtonInput.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonInput.Location = New System.Drawing.Point(19, 248)
+        Me.ButtonInput.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonInput.Location = New System.Drawing.Point(19, 294)
         Me.ButtonInput.Name = "ButtonInput"
-        Me.ButtonInput.Size = New System.Drawing.Size(111, 33)
+        Me.ButtonInput.Size = New System.Drawing.Size(203, 68)
         Me.ButtonInput.TabIndex = 15
         Me.ButtonInput.Text = "Input"
         Me.ButtonInput.UseVisualStyleBackColor = True
         '
         'ButtonEdit
         '
-        Me.ButtonEdit.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonEdit.Location = New System.Drawing.Point(150, 248)
+        Me.ButtonEdit.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonEdit.Location = New System.Drawing.Point(228, 294)
         Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(111, 33)
+        Me.ButtonEdit.Size = New System.Drawing.Size(229, 68)
         Me.ButtonEdit.TabIndex = 16
         Me.ButtonEdit.Text = "Edit"
         Me.ButtonEdit.UseVisualStyleBackColor = True
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonHapus.Location = New System.Drawing.Point(286, 248)
+        Me.ButtonHapus.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonHapus.Location = New System.Drawing.Point(463, 294)
         Me.ButtonHapus.Name = "ButtonHapus"
-        Me.ButtonHapus.Size = New System.Drawing.Size(111, 33)
+        Me.ButtonHapus.Size = New System.Drawing.Size(239, 68)
         Me.ButtonHapus.TabIndex = 17
         Me.ButtonHapus.Text = "Hapus"
         Me.ButtonHapus.UseVisualStyleBackColor = True
         '
         'ButtonTutup
         '
-        Me.ButtonTutup.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ButtonTutup.Location = New System.Drawing.Point(414, 248)
+        Me.ButtonTutup.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ButtonTutup.Location = New System.Drawing.Point(708, 294)
         Me.ButtonTutup.Name = "ButtonTutup"
-        Me.ButtonTutup.Size = New System.Drawing.Size(111, 33)
+        Me.ButtonTutup.Size = New System.Drawing.Size(236, 68)
         Me.ButtonTutup.TabIndex = 18
         Me.ButtonTutup.Text = "Tutup"
         Me.ButtonTutup.UseVisualStyleBackColor = True
@@ -245,11 +250,11 @@ Partial Class FormAdmin
         Me.DataGridView2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(19, 309)
+        Me.DataGridView2.Location = New System.Drawing.Point(19, 368)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.RowHeadersWidth = 62
         Me.DataGridView2.RowTemplate.Height = 33
-        Me.DataGridView2.Size = New System.Drawing.Size(557, 287)
+        Me.DataGridView2.Size = New System.Drawing.Size(927, 317)
         Me.DataGridView2.TabIndex = 20
         '
         'Panel1
@@ -258,25 +263,25 @@ Partial Class FormAdmin
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(10, 719)
+        Me.Panel1.Size = New System.Drawing.Size(10, 788)
         Me.Panel1.TabIndex = 21
         '
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Gray
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel3.Location = New System.Drawing.Point(646, 0)
+        Me.Panel3.Location = New System.Drawing.Point(1016, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(10, 719)
+        Me.Panel3.Size = New System.Drawing.Size(10, 788)
         Me.Panel3.TabIndex = 22
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Gray
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(10, 709)
+        Me.Panel4.Location = New System.Drawing.Point(10, 778)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(636, 10)
+        Me.Panel4.Size = New System.Drawing.Size(1006, 10)
         Me.Panel4.TabIndex = 23
         '
         'GroupBox1
@@ -299,28 +304,31 @@ Partial Class FormAdmin
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(31, 88)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 68)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(589, 613)
+        Me.GroupBox1.Size = New System.Drawing.Size(959, 702)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Admin"
         '
         'konfirmasi
         '
-        Me.konfirmasi.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.konfirmasi.Location = New System.Drawing.Point(181, 157)
+        Me.konfirmasi.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.konfirmasi.Location = New System.Drawing.Point(181, 199)
         Me.konfirmasi.Name = "konfirmasi"
-        Me.konfirmasi.Size = New System.Drawing.Size(391, 31)
+        Me.konfirmasi.Size = New System.Drawing.Size(761, 32)
         Me.konfirmasi.TabIndex = 22
         '
         'Label5
         '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Label5.Location = New System.Drawing.Point(20, 154)
+        Me.Label5.Location = New System.Drawing.Point(20, 196)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(156, 32)
+        Me.Label5.Size = New System.Drawing.Size(155, 32)
         Me.Label5.TabIndex = 21
         Me.Label5.Text = "Konfirmasi"
         '
@@ -328,7 +336,7 @@ Partial Class FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(656, 719)
+        Me.ClientSize = New System.Drawing.Size(1026, 788)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel3)
@@ -371,4 +379,5 @@ Partial Class FormAdmin
     Friend WithEvents Label6 As Label
     Friend WithEvents konfirmasi As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

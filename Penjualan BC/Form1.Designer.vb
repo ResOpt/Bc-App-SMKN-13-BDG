@@ -73,8 +73,8 @@ Partial Class Form1
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Dashboard = New System.Windows.Forms.Panel()
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.Dashboard = New System.Windows.Forms.Panel()
         Me.Panel6.SuspendLayout()
         Me.PnlMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -97,42 +97,42 @@ Partial Class Form1
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(181, 53)
+        Me.Panel6.Size = New System.Drawing.Size(204, 53)
         Me.Panel6.TabIndex = 5
         '
         'LblUsername
         '
         Me.LblUsername.AutoSize = True
-        Me.LblUsername.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LblUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblUsername.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.LblUsername.Location = New System.Drawing.Point(11, 15)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(0, 28)
+        Me.LblUsername.Size = New System.Drawing.Size(0, 30)
         Me.LblUsername.TabIndex = 3
         '
         'LblStatus
         '
         Me.LblStatus.AutoSize = True
-        Me.LblStatus.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LblStatus.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblStatus.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.LblStatus.Location = New System.Drawing.Point(127, 22)
+        Me.LblStatus.Location = New System.Drawing.Point(126, 17)
         Me.LblStatus.Name = "LblStatus"
-        Me.LblStatus.Size = New System.Drawing.Size(0, 21)
+        Me.LblStatus.Size = New System.Drawing.Size(0, 28)
         Me.LblStatus.TabIndex = 4
         '
         'PnlMenu
         '
-        Me.PnlMenu.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PnlMenu.BackColor = System.Drawing.Color.LightGray
         Me.PnlMenu.Controls.Add(Me.GroupBox1)
         Me.PnlMenu.Controls.Add(Me.GroupBox2)
         Me.PnlMenu.Controls.Add(Me.GroupBox5)
         Me.PnlMenu.Controls.Add(Me.GroupBox3)
         Me.PnlMenu.Controls.Add(Me.GroupBox4)
-        Me.PnlMenu.Location = New System.Drawing.Point(0, 95)
+        Me.PnlMenu.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PnlMenu.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.PnlMenu.Location = New System.Drawing.Point(0, 100)
         Me.PnlMenu.Name = "PnlMenu"
-        Me.PnlMenu.Size = New System.Drawing.Size(1026, 149)
+        Me.PnlMenu.Size = New System.Drawing.Size(1026, 152)
         Me.PnlMenu.TabIndex = 7
         Me.PnlMenu.Visible = False
         '
@@ -141,9 +141,9 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.logout)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox1.Location = New System.Drawing.Point(687, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(781, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(84, 149)
+        Me.GroupBox1.Size = New System.Drawing.Size(91, 152)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Keluar"
@@ -153,7 +153,7 @@ Partial Class Form1
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(6, 105)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(69, 25)
+        Me.Label7.Size = New System.Drawing.Size(81, 30)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Logout"
         '
@@ -177,18 +177,18 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox2.Location = New System.Drawing.Point(358, 0)
+        Me.GroupBox2.Location = New System.Drawing.Point(424, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(329, 149)
+        Me.GroupBox2.Size = New System.Drawing.Size(357, 152)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Laporan"
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(119, 88)
+        Me.Label6.Location = New System.Drawing.Point(132, 84)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 58)
+        Me.Label6.Size = New System.Drawing.Size(107, 61)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Laporan Penjualan"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -198,7 +198,7 @@ Partial Class Form1
         Me.laporan_data.FlatAppearance.BorderSize = 0
         Me.laporan_data.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.laporan_data.Image = CType(resources.GetObject("laporan_data.Image"), System.Drawing.Image)
-        Me.laporan_data.Location = New System.Drawing.Point(23, 30)
+        Me.laporan_data.Location = New System.Drawing.Point(37, 30)
         Me.laporan_data.Name = "laporan_data"
         Me.laporan_data.Size = New System.Drawing.Size(64, 63)
         Me.laporan_data.TabIndex = 7
@@ -209,7 +209,7 @@ Partial Class Form1
         Me.laporan_penjualan.FlatAppearance.BorderSize = 0
         Me.laporan_penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.laporan_penjualan.Image = CType(resources.GetObject("laporan_penjualan.Image"), System.Drawing.Image)
-        Me.laporan_penjualan.Location = New System.Drawing.Point(133, 30)
+        Me.laporan_penjualan.Location = New System.Drawing.Point(154, 30)
         Me.laporan_penjualan.Name = "laporan_penjualan"
         Me.laporan_penjualan.Size = New System.Drawing.Size(64, 63)
         Me.laporan_penjualan.TabIndex = 8
@@ -220,7 +220,7 @@ Partial Class Form1
         Me.laporan_pembelian.FlatAppearance.BorderSize = 0
         Me.laporan_pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.laporan_pembelian.Image = CType(resources.GetObject("laporan_pembelian.Image"), System.Drawing.Image)
-        Me.laporan_pembelian.Location = New System.Drawing.Point(234, 22)
+        Me.laporan_pembelian.Location = New System.Drawing.Point(266, 22)
         Me.laporan_pembelian.Name = "laporan_pembelian"
         Me.laporan_pembelian.Size = New System.Drawing.Size(64, 63)
         Me.laporan_pembelian.TabIndex = 10
@@ -228,18 +228,18 @@ Partial Class Form1
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(219, 88)
+        Me.Label8.Location = New System.Drawing.Point(241, 85)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(99, 58)
+        Me.Label8.Size = New System.Drawing.Size(113, 61)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Laporan Pembelian"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label5
         '
-        Me.Label5.Location = New System.Drawing.Point(0, 88)
+        Me.Label5.Location = New System.Drawing.Point(0, 83)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(113, 58)
+        Me.Label5.Size = New System.Drawing.Size(140, 61)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Laporan Data Master"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -251,9 +251,9 @@ Partial Class Form1
         Me.GroupBox5.Controls.Add(Me.pembelian)
         Me.GroupBox5.Controls.Add(Me.Label2)
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox5.Location = New System.Drawing.Point(165, 0)
+        Me.GroupBox5.Location = New System.Drawing.Point(188, 0)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(193, 149)
+        Me.GroupBox5.Size = New System.Drawing.Size(236, 152)
         Me.GroupBox5.TabIndex = 9
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Transaksi"
@@ -261,9 +261,9 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 105)
+        Me.Label4.Location = New System.Drawing.Point(6, 102)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 25)
+        Me.Label4.Size = New System.Drawing.Size(104, 30)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Penjualan"
         '
@@ -272,7 +272,7 @@ Partial Class Form1
         Me.penjualan.FlatAppearance.BorderSize = 0
         Me.penjualan.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.penjualan.Image = CType(resources.GetObject("penjualan.Image"), System.Drawing.Image)
-        Me.penjualan.Location = New System.Drawing.Point(14, 30)
+        Me.penjualan.Location = New System.Drawing.Point(32, 30)
         Me.penjualan.Name = "penjualan"
         Me.penjualan.Size = New System.Drawing.Size(64, 63)
         Me.penjualan.TabIndex = 6
@@ -283,7 +283,7 @@ Partial Class Form1
         Me.pembelian.FlatAppearance.BorderSize = 0
         Me.pembelian.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.pembelian.Image = CType(resources.GetObject("pembelian.Image"), System.Drawing.Image)
-        Me.pembelian.Location = New System.Drawing.Point(111, 30)
+        Me.pembelian.Location = New System.Drawing.Point(140, 30)
         Me.pembelian.Name = "pembelian"
         Me.pembelian.Size = New System.Drawing.Size(64, 63)
         Me.pembelian.TabIndex = 7
@@ -292,9 +292,9 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(98, 105)
+        Me.Label2.Location = New System.Drawing.Point(111, 105)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(93, 25)
+        Me.Label2.Size = New System.Drawing.Size(113, 30)
         Me.Label2.TabIndex = 8
         Me.Label2.Text = "Pembelian"
         '
@@ -303,9 +303,9 @@ Partial Class Form1
         Me.GroupBox3.Controls.Add(Me.Label3)
         Me.GroupBox3.Controls.Add(Me.barang)
         Me.GroupBox3.Dock = System.Windows.Forms.DockStyle.Left
-        Me.GroupBox3.Location = New System.Drawing.Point(90, 0)
+        Me.GroupBox3.Location = New System.Drawing.Point(97, 0)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(75, 149)
+        Me.GroupBox3.Size = New System.Drawing.Size(91, 152)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Stok"
@@ -315,7 +315,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(6, 105)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 25)
+        Me.Label3.Size = New System.Drawing.Size(81, 30)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Barang"
         '
@@ -324,7 +324,7 @@ Partial Class Form1
         Me.barang.FlatAppearance.BorderSize = 0
         Me.barang.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.barang.Image = CType(resources.GetObject("barang.Image"), System.Drawing.Image)
-        Me.barang.Location = New System.Drawing.Point(6, 30)
+        Me.barang.Location = New System.Drawing.Point(13, 30)
         Me.barang.Name = "barang"
         Me.barang.Size = New System.Drawing.Size(64, 63)
         Me.barang.TabIndex = 2
@@ -337,7 +337,7 @@ Partial Class Form1
         Me.GroupBox4.Dock = System.Windows.Forms.DockStyle.Left
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(90, 149)
+        Me.GroupBox4.Size = New System.Drawing.Size(97, 152)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Admin"
@@ -347,7 +347,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 105)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 25)
+        Me.Label1.Size = New System.Drawing.Size(76, 30)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin"
         '
@@ -356,7 +356,7 @@ Partial Class Form1
         Me.admin.FlatAppearance.BorderSize = 0
         Me.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.admin.Image = CType(resources.GetObject("admin.Image"), System.Drawing.Image)
-        Me.admin.Location = New System.Drawing.Point(12, 30)
+        Me.admin.Location = New System.Drawing.Point(18, 30)
         Me.admin.Name = "admin"
         Me.admin.Size = New System.Drawing.Size(64, 63)
         Me.admin.TabIndex = 0
@@ -365,11 +365,12 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.DarkGray
+        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MaterToolStripMenuItem, Me.TransaksiToolStripMenuItem, Me.LaporanToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 62)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1026, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1026, 38)
         Me.MenuStrip1.TabIndex = 9
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -377,63 +378,63 @@ Partial Class Form1
         '
         Me.MaterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AdminToolStripMenuItem, Me.BarangToolStripMenuItem})
         Me.MaterToolStripMenuItem.Name = "MaterToolStripMenuItem"
-        Me.MaterToolStripMenuItem.Size = New System.Drawing.Size(82, 29)
+        Me.MaterToolStripMenuItem.Size = New System.Drawing.Size(97, 34)
         Me.MaterToolStripMenuItem.Text = "Master"
         '
         'AdminToolStripMenuItem
         '
         Me.AdminToolStripMenuItem.Name = "AdminToolStripMenuItem"
-        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
+        Me.AdminToolStripMenuItem.Size = New System.Drawing.Size(185, 38)
         Me.AdminToolStripMenuItem.Text = "Admin"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(169, 34)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(185, 38)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'TransaksiToolStripMenuItem
         '
         Me.TransaksiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PenjualanToolStripMenuItem, Me.PembelianToolStripMenuItem})
         Me.TransaksiToolStripMenuItem.Name = "TransaksiToolStripMenuItem"
-        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(98, 29)
+        Me.TransaksiToolStripMenuItem.Size = New System.Drawing.Size(118, 34)
         Me.TransaksiToolStripMenuItem.Text = "Transaksi"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(220, 38)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(195, 34)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(220, 38)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'LaporanToolStripMenuItem
         '
         Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaporanDataMasterToolStripMenuItem, Me.LaporanPenjualanToolStripMenuItem, Me.LaporanPembelianToolStripMenuItem})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
-        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(92, 29)
+        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(109, 34)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
         '
         'LaporanDataMasterToolStripMenuItem
         '
         Me.LaporanDataMasterToolStripMenuItem.Name = "LaporanDataMasterToolStripMenuItem"
-        Me.LaporanDataMasterToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
+        Me.LaporanDataMasterToolStripMenuItem.Size = New System.Drawing.Size(322, 38)
         Me.LaporanDataMasterToolStripMenuItem.Text = "Laporan Data Master"
         '
         'LaporanPenjualanToolStripMenuItem
         '
         Me.LaporanPenjualanToolStripMenuItem.Name = "LaporanPenjualanToolStripMenuItem"
-        Me.LaporanPenjualanToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
+        Me.LaporanPenjualanToolStripMenuItem.Size = New System.Drawing.Size(322, 38)
         Me.LaporanPenjualanToolStripMenuItem.Text = "Laporan Penjualan"
         '
         'LaporanPembelianToolStripMenuItem
         '
         Me.LaporanPembelianToolStripMenuItem.Name = "LaporanPembelianToolStripMenuItem"
-        Me.LaporanPembelianToolStripMenuItem.Size = New System.Drawing.Size(279, 34)
+        Me.LaporanPembelianToolStripMenuItem.Size = New System.Drawing.Size(322, 38)
         Me.LaporanPembelianToolStripMenuItem.Text = "Laporan Pembelian"
         '
         'Panel3
@@ -448,7 +449,7 @@ Partial Class Form1
         '
         'Tgl
         '
-        Me.Tgl.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Tgl.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Tgl.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Tgl.Location = New System.Drawing.Point(111, 8)
         Me.Tgl.Name = "Tgl"
@@ -459,7 +460,7 @@ Partial Class Form1
         '
         'Wkt
         '
-        Me.Wkt.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Wkt.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Wkt.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Wkt.Location = New System.Drawing.Point(35, 9)
         Me.Wkt.Name = "Wkt"
@@ -474,6 +475,7 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Panel1.Location = New System.Drawing.Point(0, 735)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1026, 53)
@@ -570,26 +572,26 @@ Partial Class Form1
         Me.Label9.Text = "Menu Utama"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Dashboard
-        '
-        Me.Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Dashboard.Location = New System.Drawing.Point(0, 62)
-        Me.Dashboard.Name = "Dashboard"
-        Me.Dashboard.Size = New System.Drawing.Size(1026, 673)
-        Me.Dashboard.TabIndex = 8
-        '
         'Timer3
         '
         Me.Timer3.Enabled = True
+        '
+        'Dashboard
+        '
+        Me.Dashboard.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Dashboard.Location = New System.Drawing.Point(0, 252)
+        Me.Dashboard.Name = "Dashboard"
+        Me.Dashboard.Size = New System.Drawing.Size(1026, 483)
+        Me.Dashboard.TabIndex = 10
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1026, 788)
+        Me.Controls.Add(Me.Dashboard)
         Me.Controls.Add(Me.PnlMenu)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Controls.Add(Me.Dashboard)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -637,7 +639,6 @@ Partial Class Form1
     Friend WithEvents Max As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Dashboard As Panel
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MaterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AdminToolStripMenuItem As ToolStripMenuItem
@@ -672,4 +673,5 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents Dashboard As Panel
 End Class

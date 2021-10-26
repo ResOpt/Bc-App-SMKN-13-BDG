@@ -8,8 +8,8 @@
     Dim id = 1
 
     Private Sub FormPenjualan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
-        Me.WindowState = FormWindowState.Normal
+        ' Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then
@@ -131,5 +131,10 @@
 
     Private Sub btn_tampilkan_Click(sender As Object, e As EventArgs) Handles btn_tampilkan.Click
         DataGridView2.DataSource = table
+        DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
     End Sub
 End Class

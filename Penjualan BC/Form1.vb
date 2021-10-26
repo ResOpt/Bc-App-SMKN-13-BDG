@@ -73,52 +73,97 @@
     End Sub
 
     Private Sub AdminToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdminToolStripMenuItem.Click
-        FormAdmin.ShowDialog()
+        FormAdmin.Dock = DockStyle.Top
+        FormAdmin.TopLevel = False
+        Dashboard.Controls.Add(FormAdmin)
+        FormAdmin.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub Admin_Click(sender As Object, e As EventArgs) Handles admin.Click
-        FormAdmin.ShowDialog()
+        FormAdmin.Dock = DockStyle.Top
+        FormAdmin.TopLevel = False
+        Dashboard.Controls.Add(FormAdmin)
+        FormAdmin.Show()
+        PnlMenu.Visible = False
     End Sub
 
     Private Sub Barang_Click(sender As Object, e As EventArgs) Handles barang.Click
-        FormBarang.Show()
         FormBarang.Button1.PerformClick()
+        FormBarang.Dock = DockStyle.Top
+        FormBarang.TopLevel = False
+        Dashboard.Controls.Add(FormBarang)
+        FormBarang.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub BarangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem.Click
-        FormBarang.ShowDialog()
+        FormBarang.Dock = DockStyle.Top
+        FormBarang.TopLevel = False
+        Dashboard.Controls.Add(FormBarang)
+        FormBarang.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub Penjualan_Click(sender As Object, e As EventArgs) Handles penjualan.Click
-        FormPenjualan.ShowDialog()
+        FormPenjualan.Dock = DockStyle.Top
+        FormPenjualan.TopLevel = False
+        Dashboard.Controls.Add(FormPenjualan)
+        FormPenjualan.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub PenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenjualanToolStripMenuItem.Click
-        FormPenjualan.ShowDialog()
+        FormPenjualan.Dock = DockStyle.Top
+        FormPenjualan.TopLevel = False
+        Dashboard.Controls.Add(FormPenjualan)
+        FormPenjualan.Show()
+        PnlMenu.Visible = False
     End Sub
 
     Private Sub LapData_Click(sender As Object, e As EventArgs) Handles laporan_data.Click
-        FormLaporanDataMaster.ShowDialog()
+        FormLaporanDataMaster.Dock = DockStyle.Top
+        FormLaporanDataMaster.TopLevel = False
+        Dashboard.Controls.Add(FormLaporanDataMaster)
+        FormLaporanDataMaster.Show()
+        PnlMenu.Visible = False
     End Sub
 
     Private Sub LaporanDataMasterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanDataMasterToolStripMenuItem.Click
-        FormLaporanDataMaster.ShowDialog()
+        FormLaporanDataMaster.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub LapPenjualan_Click(sender As Object, e As EventArgs) Handles laporan_penjualan.Click
-        FormLaporanPenjualan.ShowDialog()
+        FormLaporanPenjualan.Show()
     End Sub
     Private Sub LaporanPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPenjualanToolStripMenuItem.Click
-        FormLaporanPenjualan.ShowDialog()
+        FormLaporanPenjualan.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles pembelian.Click
-        FormPembelian.ShowDialog()
+        FormPembelian.Dock = DockStyle.Top
+        FormPembelian.TopLevel = False
+        Dashboard.Controls.Add(FormPembelian)
+        FormPembelian.Show()
+        PnlMenu.Visible = False
     End Sub
 
     Private Sub PembelianToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem.Click
-        FormPembelian.ShowDialog()
+        FormPembelian.Dock = DockStyle.Top
+        FormPembelian.TopLevel = False
+        Dashboard.Controls.Add(FormPembelian)
+        FormPembelian.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub LaporanPembelianToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LaporanPembelianToolStripMenuItem.Click
-        FormLaporanPembelian.ShowDialog()
+        FormLaporanPembelian.Dock = DockStyle.Top
+        FormLaporanPembelian.TopLevel = False
+        Dashboard.Controls.Add(FormLaporanPembelian)
+        FormLaporanPembelian.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles laporan_pembelian.Click
-        FormLaporanPembelian.ShowDialog()
+        FormLaporanPembelian.Dock = DockStyle.Top
+        FormLaporanPembelian.TopLevel = False
+        Dashboard.Controls.Add(FormLaporanPembelian)
+        FormLaporanPembelian.Show()
+        PnlMenu.Visible = False
     End Sub
     Private Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
         Dim result As DialogResult = MessageBox.Show("Apakah Yakin Ingin Keluar ?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -132,17 +177,4 @@
             Login.ShowDialog()
         End If
     End Sub
-    'Private Sub BukaFormBaru(FormBaru As Form)
-    'If FormSekarang IsNot Nothing Then
-    '      FormSekarang.Close()
-    'End If
-    '  FormSekarang = FormBaru
-    '  FormBaru.TopLevel = False
-    '  FormBaru.Dock = DockStyle.Fill
-    '  Dashboard.Controls.Add(FormBaru)
-    '  Dashboard.Tag = FormBaru
-    '  FormBaru.BringToFront()
-    '  FormBaru.Show()
-    '  Label9.Text = FormBaru.Text
-    '  End Sub
 End Class

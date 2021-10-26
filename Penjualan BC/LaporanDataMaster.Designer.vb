@@ -46,6 +46,7 @@ Partial Class FormLaporanDataMaster
         Me.GroupBox1.Controls.Add(Me.button_user)
         Me.GroupBox1.Controls.Add(Me.button_barang)
         Me.GroupBox1.Controls.Add(Me.button_admin)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.Location = New System.Drawing.Point(31, 89)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(563, 155)

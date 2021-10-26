@@ -7,8 +7,8 @@ Public Class FormBarang
 
     Dim connect = New BarangDB
     Private Sub FormBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
-        Me.WindowState = FormWindowState.Normal
+        'Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then
@@ -111,6 +111,7 @@ Public Class FormBarang
         For Each table In barang.Tables
             DataGridView2.DataSource = table
         Next
+        DataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
     End Sub
 
     Private Sub button_edit_Click(sender As Object, e As EventArgs) Handles button_edit.Click

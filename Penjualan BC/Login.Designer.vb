@@ -38,40 +38,42 @@ Partial Class Login
         'LblPassword
         '
         Me.LblPassword.AutoSize = True
-        Me.LblPassword.Font = New System.Drawing.Font("Segoe UI Black", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LblPassword.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblPassword.ForeColor = System.Drawing.Color.Black
         Me.LblPassword.Location = New System.Drawing.Point(34, 328)
         Me.LblPassword.Name = "LblPassword"
-        Me.LblPassword.Size = New System.Drawing.Size(118, 30)
+        Me.LblPassword.Size = New System.Drawing.Size(105, 30)
         Me.LblPassword.TabIndex = 13
         Me.LblPassword.Text = "Password"
         '
         'LblUsername
         '
         Me.LblUsername.AutoSize = True
-        Me.LblUsername.Font = New System.Drawing.Font("Segoe UI Black", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.LblUsername.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.LblUsername.ForeColor = System.Drawing.Color.Black
         Me.LblUsername.Location = New System.Drawing.Point(31, 267)
         Me.LblUsername.Name = "LblUsername"
-        Me.LblUsername.Size = New System.Drawing.Size(121, 30)
+        Me.LblUsername.Size = New System.Drawing.Size(112, 30)
         Me.LblUsername.TabIndex = 12
         Me.LblUsername.Text = "Username"
         '
         'Password
         '
         Me.Password.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Password.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Password.Location = New System.Drawing.Point(170, 333)
         Me.Password.Name = "Password"
         Me.Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Password.Size = New System.Drawing.Size(180, 24)
+        Me.Password.Size = New System.Drawing.Size(180, 30)
         Me.Password.TabIndex = 11
         '
         'Username
         '
         Me.Username.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Username.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Username.Location = New System.Drawing.Point(170, 273)
         Me.Username.Name = "Username"
-        Me.Username.Size = New System.Drawing.Size(180, 24)
+        Me.Username.Size = New System.Drawing.Size(180, 30)
         Me.Username.TabIndex = 10
         '
         'LogoAkun
@@ -85,6 +87,7 @@ Partial Class Login
         'ButtonRegister
         '
         Me.ButtonRegister.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.ButtonRegister.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ButtonRegister.Location = New System.Drawing.Point(193, 400)
         Me.ButtonRegister.Name = "ButtonRegister"
         Me.ButtonRegister.Size = New System.Drawing.Size(111, 33)
@@ -95,6 +98,7 @@ Partial Class Login
         'ButtonLogin
         '
         Me.ButtonLogin.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.ButtonLogin.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ButtonLogin.Location = New System.Drawing.Point(57, 400)
         Me.ButtonLogin.Name = "ButtonLogin"
         Me.ButtonLogin.Size = New System.Drawing.Size(111, 33)

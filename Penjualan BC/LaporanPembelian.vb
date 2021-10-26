@@ -3,8 +3,8 @@
     Dim firstY As Integer
     Dim lbuttonDown As Boolean
     Private Sub FormLaporanPembelian_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
-        Me.WindowState = FormWindowState.Normal
+        'Me.MaximizedBounds = Screen.FromHandle(Me.Handle).WorkingArea
+        Me.WindowState = FormWindowState.Maximized
     End Sub
     Private Sub Panel2_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = Windows.Forms.MouseButtons.Left Then
